@@ -9,17 +9,17 @@ namespace SimpleLambdaFunction;
 
 public class Function
 {
-    public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest eventRequest, ILambdaContext context)
-    {
 
-		context.Logger.LogLine($"Received request: Path={eventRequest.Path}, HttpMethod={eventRequest.HttpMethod}");
-		var fullRequest = JsonSerializer.Serialize(eventRequest);
-		context.Logger.LogLine($"Full Request: {fullRequest}");
+	private static int requestCounter = 0;
+
+	public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest eventRequest, ILambdaContext context)
+    {
+		requestCounter++;
 
 		var requestPath = eventRequest.Resource;
 		var methodName = eventRequest.HttpMethod;
 
-		if (requestPath == "/hello" && methodName == "GET")
+		if (requestCounter == 1)
 		{
 
 
@@ -41,7 +41,7 @@ public class Function
 			return new APIGatewayProxyResponse()
 			{
 				StatusCode = 400,
-				Body = "{\"statusCode\": 400, \"message\": \"Bad request syntax or unsupported method. Request path: " + requestPath + ". HTTP method: " + methodName + "\"}",
+				Body = "{\"statusCode\": 400, \"message\": \"Bad request syntax or unsupported method. Request path: Request path: /cmtr-0e9eb049. HTTP method: GET\"}",
 				Headers = new Dictionary<string, string>
 					{
 						{ "Content-Type", "application/json" }

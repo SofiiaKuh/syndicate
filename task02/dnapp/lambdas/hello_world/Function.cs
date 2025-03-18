@@ -10,6 +10,10 @@ public class Function
 {
     public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest eventRequest, ILambdaContext context)
     {
+
+		context.Logger.LogLine($"Received request: Path={eventRequest.Path}, HttpMethod={eventRequest.HttpMethod}");
+
+
 		var requestPath = eventRequest.Resource;
 		var methodName = eventRequest.HttpMethod;
 

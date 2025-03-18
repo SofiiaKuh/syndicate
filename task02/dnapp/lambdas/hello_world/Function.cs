@@ -12,6 +12,7 @@ public class Function
     {
 
 		context.Logger.LogLine($"Received request: Path={eventRequest.Path}, HttpMethod={eventRequest.HttpMethod}");
+		context.Logger.LogLine($"Full Request: {eventRequest}");
 
 
 		var requestPath = eventRequest.Resource;

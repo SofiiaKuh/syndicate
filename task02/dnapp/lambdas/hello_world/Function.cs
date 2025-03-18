@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Amazon.Lambda.Core;
 using Amazon.Lambda.APIGatewayEvents;
+using System.Text.Json;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
@@ -12,8 +13,8 @@ public class Function
     {
 
 		context.Logger.LogLine($"Received request: Path={eventRequest.Path}, HttpMethod={eventRequest.HttpMethod}");
-		context.Logger.LogLine($"Full Request: {eventRequest}");
-
+		var fullRequest = JsonSerializer.Serialize(eventRequest);
+		context.Logger.LogLine($"Full Request: {fullRequest}");
 
 		var requestPath = eventRequest.Resource;
 		var methodName = eventRequest.HttpMethod;

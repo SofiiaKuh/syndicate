@@ -41,7 +41,7 @@ public class Function
 			return new APIGatewayProxyResponse()
 			{
 				StatusCode = 400,
-				Body = "{\"statusCode\": 400, \"message\": \"Bad request syntax or unsupported method. Request path: Request path: /cmtr-0e9eb049. HTTP method: GET\"}",
+				Body = "{\"statusCode\": 400, \"message\": \"Bad request syntax or unsupported method. Request path: /cmtr-0e9eb049. HTTP method: GET\"}",
 				Headers = new Dictionary<string, string>
 					{
 						{ "Content-Type", "application/json" }

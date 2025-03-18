@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\Function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\deployment_resources.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:deployment_resources.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\lambda_config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lambda_config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02_huinia\\dnapp\\lambdas\\hello_world\\Function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "deployment_resources.json",
+              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\deployment_resources.json",
+              "RelativeDocumentMoniker": "deployment_resources.json",
+              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\deployment_resources.json",
+              "RelativeToolTip": "deployment_resources.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T08:59:53.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Function.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02_huinia\\dnapp\\lambdas\\hello_world\\Function.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\task02_huinia\\dnapp\\lambdas\\hello_world\\Function.cs",
+              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02_huinia\\dnapp\\lambdas\\hello_world\\Function.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\task02_huinia\\dnapp\\lambdas\\hello_world\\Function.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T08:55:20.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Function.cs",
+              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\Function.cs",
+              "RelativeDocumentMoniker": "Function.cs",
+              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\Function.cs",
+              "RelativeToolTip": "Function.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T08:54:03.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lambda_config.json",
+              "DocumentMoniker": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\lambda_config.json",
+              "RelativeDocumentMoniker": "lambda_config.json",
+              "ToolTip": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task02\\dnapp\\lambdas\\hello_world\\lambda_config.json",
+              "RelativeToolTip": "lambda_config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-18T08:52:10.958Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

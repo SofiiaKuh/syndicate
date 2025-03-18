@@ -8,28 +8,40 @@ namespace SimpleLambdaFunction;
 
 public class Function
 {
-	public CustomLambdaResponse FunctionHandler(APIGatewayProxyRequest request, ILambdaContext context)
-	{
-		if (request.Resource == "/hello" && request.HttpMethod == "GET")
+    public APIGatewayProxyResponse FunctionHandler(APIGatewayProxyRequest eventRequest, ILambdaContext context)
+    {
+		var requestPath = eventRequest.Resource;
+		var methodName = eventRequest.HttpMethod;
+
+		if (requestPath == "/hello" && methodName == "GET")
 		{
-			return new CustomLambdaResponse
+
+
+			return new APIGatewayProxyResponse()
 			{
-				statusCode = 200,
-				message = "Hello from Lambda!",
+				StatusCode = 200,
+				Body = "{\"statusCode\": 200, \"message\": \"Hello from Lambda\"}",
+				Headers = new Dictionary<string, string>()
+					{
+						{ "Content-Type", "application/json" }
+					},
+				IsBase64Encoded = false
 			};
 		}
 		else
 		{
-			return new CustomLambdaResponse
+
+
+			return new APIGatewayProxyResponse()
 			{
-				statusCode = 400,
-				message = $"Bad request syntax or unsupported method. Request path: {request.Resource}. HTTP method: {request.HttpMethod}",
+				StatusCode = 400,
+				Body = "{\"statusCode\": 400, \"message\": \"Bad request syntax or unsupported method. Request path: " + requestPath + ". HTTP method: " + methodName + "\"}",
+				Headers = new Dictionary<string, string>
+					{
+						{ "Content-Type", "application/json" }
+					},
+				IsBase64Encoded = false
 			};
 		}
-	}
-	public class CustomLambdaResponse
-	{
-		public int statusCode { get; set; }
-		public string message { get; set; }
 	}
 }

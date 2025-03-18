@@ -13,11 +13,9 @@
   "env_variables": {},
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
-  "ephemeral_storage": 512,
-  "tags": {},
-  "lambda": null,
   "url_config": {
-    "function_url_enabled": true,
     "auth_type": "NONE"
-  }
+  },
+  "ephemeral_storage": 512,
+  "tags": {}
 }

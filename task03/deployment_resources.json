@@ -14,7 +14,9 @@
             "dynamodb:DeleteItem",
             "ssm:PutParameter",
             "ssm:GetParameter",
-            "kms:Decrypt"
+            "kms:Decrypt",
+            "lambda",
+            "InvokeFunction"
           ],
           "Effect": "Allow",
           "Resource": "*"
@@ -27,55 +29,25 @@
   },
   "task3_api": {
     "resource_type": "api_gateway",
-    "deploy_stage": "prod",
+    "deploy_stage": "api",
+    "dependencies": [],
     "resources": {
       "/hello": {
-        "enable_cors": true,
+        "enable_cors": false,
         "GET": {
-          "integration_request_body_template": {},
-          "authorization_type": "AWS_IAM",
+          "enable_proxy": true,
+          "authorization_type": "NONE",
           "integration_type": "lambda",
+          "lambda_name": "hello_world",
+          "api_key_required": false,
           "method_request_parameters": {},
-          "cache_configuration": {
-            "cache_ttl_sec": 100,
-            "encrypt_cache_data": true
-          },
-          "throttling_configuration": {
-            "throttling_enabled": false,
-            "throttling_rate_limit": 10002,
-            "throttling_burst_limit": 5002
-          },
-          "default_error_pattern": true,
-          "integration_passthrough_behavior": "WHEN_NO_TEMPLATES",
-          "lambda_name": "hello_world"
-        },
-        "responses": [
-          {
-            "status_code": "200",
-            "response_parameters": {
-              "method.response.header.Content-Type": "'application/json'"
-            },
-            "response_models": {
-              "application/json": "Empty"
-            },
-            "body": {
-              "statusCode": 200,
-              "message": "Hello from Lambda"
-            }
-          }
-        ],
-        "integration_responses": [
-          {
-            "status_code": "200",
-            "response_parameters": {
-              "method.response.header.Content-Type": "'application/json'"
-            },
-            "response_templates": {
-              "application/json": "{\"statusCode\": 200, \"message\": \"Hello from Lambda\"}"
-            }
-          }
-        ]
+          "integration_request_body_template": {},
+          "responses": [],
+          "integration_responses": [],
+          "default_error_pattern": true
+        }
       }
-    }
+    },
+    "tags": {}
   }
 }

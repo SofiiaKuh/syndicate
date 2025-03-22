@@ -1,0 +1,57 @@
+{
+  "lambda-basic-execution": {
+    "policy_content": {
+      "Statement": [
+        {
+          "Action": [
+            "logs:CreateLogGroup",
+            "logs:CreateLogStream",
+            "logs:PutLogEvents",
+            "dynamodb:GetItem",
+            "dynamodb:Query",
+            "dynamodb:PutItem",
+            "dynamodb:Batch*",
+            "dynamodb:DeleteItem",
+            "ssm:PutParameter",
+            "ssm:GetParameter",
+            "kms:Decrypt"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+        }
+      ],
+      "Version": "2012-10-17"
+    },
+    "resource_type": "iam_policy",
+    "tags": {}
+  },
+  "myApiGateway": {
+    "resource_type": "api_gateway",
+    "deploy_stage": "prod",
+    "dependencies": [],
+    "resources": {
+      "/hello": {
+        "methods": [
+          {
+            "httpMethod": "GET",
+            "request": {
+              "payload": "empty"
+            },
+            "response": {
+              "statusCode": 200,
+              "body": {
+                "statusCode": 200,
+                "message": "Hello from Lambda"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "minimum_compression_size": 0,
+    "tags": {
+      "Environment": "Production",
+      "Project": "MyProject"
+    }
+  }
+}

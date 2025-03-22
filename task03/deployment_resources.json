@@ -28,7 +28,6 @@
   "myApiGateway": {
     "resource_type": "api_gateway",
     "deploy_stage": "prod",
-    "dependencies": [],
     "resources": {
       "/hello": {
         "methods": [
@@ -47,11 +46,6 @@
           }
         ]
       }
-    },
-    "minimum_compression_size": 0,
-    "tags": {
-      "Environment": "Production",
-      "Project": "MyProject"
     }
   }
 }

@@ -25,7 +25,7 @@
     "resource_type": "iam_policy",
     "tags": {}
   },
-  "myApiGateway": {
+  "task3_api": {
     "resource_type": "api_gateway",
     "deploy_stage": "prod",
     "resources": {

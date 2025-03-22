@@ -15,8 +15,7 @@
             "ssm:PutParameter",
             "ssm:GetParameter",
             "kms:Decrypt",
-            "lambda",
-            "InvokeFunction"
+            "lambda:InvokeFunction"
           ],
           "Effect": "Allow",
           "Resource": "*"

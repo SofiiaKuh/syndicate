@@ -11,7 +11,7 @@ public class Function
 	{
 		foreach (var record in snsEvent.Records)
 		{
-			context.Logger.LogInformation($"Received SNS message: {record.Sns.Message}");
+			context.Logger.LogInformation(record.Sns.Message);
 		}
 
 		await Task.CompletedTask; // Placeholder for async operations if needed

@@ -11,7 +11,7 @@ public class Function
 	{
 		foreach (var record in sqsEvent.Records)
 		{
-			context.Logger.LogInformation($"Received SQS message: {record.Body}");
+			context.Logger.LogInformation(record.Body);
 		}
 
 		await Task.CompletedTask; // Placeholder for async operations if needed

@@ -9,7 +9,7 @@ namespace SimpleLambdaFunction
 {
 	public class Function
 	{
-		public async Task Handler(SNSEvent snsEvent, ILambdaContext context)
+		public async Task FucnctionHandler(SNSEvent snsEvent, ILambdaContext context)
 		{
 			foreach (var record in snsEvent.Records)
 			{

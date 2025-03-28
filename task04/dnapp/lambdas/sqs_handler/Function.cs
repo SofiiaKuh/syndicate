@@ -1,26 +1,19 @@
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SQSEvents;
 using System;
+using System.Threading.Tasks;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
-namespace SimpleLambdaFunction
+public class Function
 {
-	public class Function
+	public async Task Handler(SQSEvent sqsEvent, ILambdaContext context)
 	{
-		public void SQSHandler(SQSEvent sqsEvent, ILambdaContext context)
+		foreach (var record in sqsEvent.Records)
 		{
-			foreach (var record in sqsEvent.Records)
-			{
-				try
-				{
-					context.Logger.LogLine($"Received SQS Message: {record.Body}");
-				}
-				catch (Exception ex)
-				{
-					context.Logger.LogLine($"Error processing SQS message: {ex.Message}");
-				}
-			}
+			context.Logger.LogInformation($"Received SQS message: {record.Body}");
 		}
+
+		await Task.CompletedTask; // Placeholder for async operations if needed
 	}
 }

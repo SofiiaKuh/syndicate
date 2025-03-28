@@ -1,26 +1,19 @@
 using Amazon.Lambda.Core;
 using Amazon.Lambda.SNSEvents;
 using System;
+using System.Threading.Tasks;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
-namespace SimpleLambdaFunction
+public class Function
 {
-	public class Function
+	public async Task Handler(SNSEvent snsEvent, ILambdaContext context)
 	{
-		public void SNSHandler(SNSEvent snsEvent, ILambdaContext context)
+		foreach (var record in snsEvent.Records)
 		{
-			foreach (var record in snsEvent.Records)
-			{
-				try
-				{
-					context.Logger.LogLine($"Received SNS Message: {record.Sns.Message}");
-				}
-				catch (Exception ex)
-				{
-					context.Logger.LogLine($"Error processing SNS message: {ex.Message}");
-				}
-			}
+			context.Logger.LogInformation($"Received SNS message: {record.Sns.Message}");
 		}
+
+		await Task.CompletedTask; // Placeholder for async operations if needed
 	}
 }

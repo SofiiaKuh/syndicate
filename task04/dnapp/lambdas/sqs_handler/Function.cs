@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
-public class Function
+namespace SimpleLambdaFunction 
 {
-	public async Task Handler(SQSEvent sqsEvent, ILambdaContext context)
+	public class Function
 	{
-		foreach (var record in sqsEvent.Records)
+		public async Task Handler(SQSEvent sqsEvent, ILambdaContext context)
 		{
-			Console.WriteLine(JsonSerializer.Serialize(record));
-		}
+			foreach (var record in sqsEvent.Records)
+			{
+				context.Logger.LogLine(JsonSerializer.Serialize(record));
+			}
 
-		await Task.CompletedTask; // Placeholder for async operations if needed
+			await Task.CompletedTask; 
+		}
 	}
 }

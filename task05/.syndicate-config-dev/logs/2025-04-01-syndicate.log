@@ -11843,3 +11843,501 @@ C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\tas
 2025-04-01 21:30:27,664 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
 2025-04-01 21:30:27,664 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
 2025-04-01 21:30:27,995 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:33:07,964 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 21:33:08,248 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 21:33:09,344 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:33:09,344 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:33:09,756 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:33:10,661 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 21:33:10,662 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 21:33:10,662 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.000912
+2025-04-01 21:33:10,743 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.213309
+2025-04-01 21:33:10,744 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 21:33:10,744 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 21:33:10,744 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 21:33:10,744 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 21:33:10,745 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 21:33:10,745 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 21:33:10,745 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 21:33:10,797 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 21:33:11,200 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 21:33:11,200 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 21:33:13,611 [INFO] USER:sofia dotnet.py:145:_build_dotnet_lambda_artifact LOG: Running the command "['dotnet', 'publish', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler', '-p:GenerateRuntimeConfigurationFiles=true', '--configuration', 'Release', '--framework', 'net8.0', '--runtime', 'linux-x64', '--self-contained', 'False', '--output', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\.syndicate-config-dev/bundles/task05_250401.213309/dotnet_tmp/lambda/api_handler']"
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 254 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(83,17): warning CS8618: Non-nullable property 'Event' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\bin\Release\net8.0\linux-x64\SimpleLambdaFunction.dll
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev\bundles\task05_250401.213309\dotnet_tmp\lambda\api_handler\
+
+
+2025-04-01 21:33:13,884 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/bin"
+2025-04-01 21:33:13,887 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/obj"
+2025-04-01 21:33:13,895 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.213309/dotnet_tmp"
+2025-04-01 21:33:13,899 [INFO] USER:sofia handlers.py:888:assemble_dotnet LOG: DotNet artifacts were prepared successfully.
+2025-04-01 21:33:13,900 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:03.102495
+2025-04-01 21:33:14,024 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble, elapsed time: 0:00:03.280805
+2025-04-01 21:33:14,081 [INFO] USER:sofia handlers.py:1047:package_meta LOG: Package meta, bundle: task05_250401.213309
+2025-04-01 21:33:14,082 [INFO] USER:sofia meta_processor.py:526:create_meta LOG: Bundle path: C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05/bundles/task05_250401.213309
+2025-04-01 21:33:14,103 [INFO] USER:sofia helper.py:306:write_content_to_file LOG: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.213309\build_meta.json file was created.
+2025-04-01 21:33:14,103 [INFO] USER:sofia handlers.py:1050:package_meta LOG: Meta was configured successfully.
+2025-04-01 21:33:14,104 [INFO] USER:sofia helper.py:347:timed LOG: Stage package_meta, elapsed time: 0:00:00.022117
+2025-04-01 21:33:14,250 [INFO] USER:sofia handlers.py:1095:upload LOG: Upload bundle: task05_250401.213309
+2025-04-01 21:33:14,420 [INFO] USER:sofia bundle_processor.py:236:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-04-01 21:33:16,192 [INFO] USER:sofia handlers.py:1102:upload LOG: Bundle was uploaded successfully
+2025-04-01 21:33:16,193 [INFO] USER:sofia helper.py:347:timed LOG: Stage upload, elapsed time: 0:00:02.018358
+2025-04-01 21:33:16,253 [INFO] USER:sofia helper.py:347:timed LOG: Stage build, elapsed time: 0:00:06.495345
+2025-04-01 21:33:18,588 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 21:33:18,876 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 21:33:20,268 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:33:20,269 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:33:20,678 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:33:20,679 [INFO] USER:sofia helper.py:247:resolve_default_value LOG: Resolved value of deploy_name: task05
+2025-04-01 21:33:20,946 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:33:20,946 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:33:21,293 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:33:21,293 [INFO] USER:sofia helper.py:247:resolve_default_value LOG: Resolved value of bundle_name: task05_250401.213309
+2025-04-01 21:33:21,578 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:33:21,579 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:33:21,913 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:33:22,247 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:33:22,247 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:33:22,595 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:33:24,063 [INFO] USER:sofia deployment_processor.py:483:create_deployment_resources LOG: The latest deployment has status succeeded. Loaded output:
+ {
+    "arn:aws:iam::423623856894:policy/cmtr-0e9eb049-lambda-basic-execution": {
+        "resource_name": "cmtr-0e9eb049-lambda-basic-execution",
+        "resource_meta": {
+            "policy_content": {
+                "Statement": [
+                    {
+                        "Action": [
+                            "logs:CreateLogGroup",
+                            "logs:CreateLogStream",
+                            "logs:PutLogEvents",
+                            "dynamodb:GetItem",
+                            "dynamodb:Query",
+                            "dynamodb:PutItem",
+                            "dynamodb:Batch*",
+                            "dynamodb:DeleteItem",
+                            "ssm:PutParameter",
+                            "ssm:GetParameter",
+                            "kms:Decrypt"
+                        ],
+                        "Effect": "Allow",
+                        "Resource": "*"
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "resource_type": "iam_policy",
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            }
+        },
+        "description": {
+            "PolicyName": "cmtr-0e9eb049-lambda-basic-execution",
+            "PolicyId": "ANPAWFIPTCL7JZU5ATC2R",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 1,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2025-04-01T14:57:36+00:00",
+            "UpdateDate": "2025-04-01T14:57:36+00:00",
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-12"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "0e9eb049"
+                }
+            ]
+        }
+    },
+    "arn:aws:iam::423623856894:role/cmtr-0e9eb049-api_handler-role": {
+        "resource_name": "cmtr-0e9eb049-api_handler-role",
+        "resource_meta": {
+            "predefined_policies": [],
+            "principal_service": "lambda",
+            "custom_policies": [
+                "cmtr-0e9eb049-lambda-basic-execution"
+            ],
+            "resource_type": "iam_role",
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            }
+        },
+        "description": {
+            "Path": "/",
+            "RoleName": "cmtr-0e9eb049-api_handler-role",
+            "RoleId": "AROAWFIPTCL7MICY6XOJY",
+            "CreateDate": "2025-04-01T14:57:36+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600,
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-12"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "0e9eb049"
+                }
+            ],
+            "RoleLastUsed": {}
+        }
+    },
+    "arn:aws:dynamodb:eu-west-1:423623856894:table/cmtr-0e9eb049-Events": {
+        "resource_name": "cmtr-0e9eb049-Events",
+        "resource_meta": {
+            "resource_type": "dynamodb_table",
+            "hash_key_name": "id",
+            "hash_key_type": "S",
+            "read_capacity": 1,
+            "write_capacity": 1,
+            "global_indexes": [],
+            "autoscaling": [],
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            },
+            "region": "eu-west-1",
+            "external": true
+        },
+        "description": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "Id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "cmtr-0e9eb049-Events",
+            "KeySchema": [
+                {
+                    "AttributeName": "Id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "TableStatus": "ACTIVE",
+            "CreationDateTime": "2025-04-01T17:57:43.544000+03:00",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 1,
+                "WriteCapacityUnits": 1
+            },
+            "TableSizeBytes": 0,
+            "ItemCount": 0,
+            "TableId": "27f0a247-04d5-404e-a76c-94936c0e717c"
+        }
+    },
+    "arn:aws:lambda:eu-west-1:423623856894:function:cmtr-0e9eb049-api_handler:dev": {
+        "resource_name": "cmtr-0e9eb049-api_handler",
+        "resource_meta": {
+            "version": "1.0",
+            "name": "cmtr-0e9eb049-api_handler",
+            "func_name": "SimpleLambdaFunction::SimpleLambdaFunction.Function::FunctionHandler",
+            "resource_type": "lambda",
+            "iam_role_name": "cmtr-0e9eb049-api_handler-role",
+            "runtime": "dotnet8",
+            "memory": 128,
+            "timeout": 100,
+            "lambda_path": "lambdas\\api_handler",
+            "dependencies": [],
+            "event_sources": [],
+            "env_variables": {},
+            "publish_version": true,
+            "alias": "dev",
+            "url_config": {},
+            "ephemeral_storage": 512,
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            },
+            "s3_path": "task05_250401.210058/api_handler-1.0.zip",
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "04b2f792-d756-494b-bc3f-3a80c5fc34f6",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Tue, 01 Apr 2025 18:01:15 GMT",
+                    "content-type": "application/json",
+                    "content-length": "2889",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "04b2f792-d756-494b-bc3f-3a80c5fc34f6"
+                },
+                "RetryAttempts": 0
+            },
+            "Configuration": {
+                "FunctionName": "cmtr-0e9eb049-api_handler",
+                "Runtime": "dotnet8",
+                "Role": "arn:aws:iam::423623856894:role/cmtr-0e9eb049-api_handler-role",
+                "Handler": "SimpleLambdaFunction::SimpleLambdaFunction.Function::FunctionHandler",
+                "CodeSize": 766769,
+                "Description": " ",
+                "Timeout": 100,
+                "MemorySize": 128,
+                "LastModified": "2025-04-01T14:58:07.090+0000",
+                "CodeSha256": "04r+UvcwyUTHXqMiDomt4Jl40L2+lqdDya3wuDpwKTU=",
+                "Version": "$LATEST",
+                "TracingConfig": {
+                    "Mode": "PassThrough"
+                },
+                "RevisionId": "425ae08b-5ca7-4711-bfa2-cfcba4aae0fe",
+                "Layers": [],
+                "State": "Active",
+                "LastUpdateStatus": "Successful",
+                "PackageType": "Zip",
+                "Architectures": [
+                    "x86_64"
+                ],
+                "EphemeralStorage": {
+                    "Size": 512
+                },
+                "SnapStart": {
+                    "ApplyOn": "None",
+                    "OptimizationStatus": "Off"
+                },
+                "RuntimeVersionConfig": {
+                    "RuntimeVersionArn": "arn:aws:lambda:eu-west-1::runtime:c6c58e7e4df0b9303cd24674807e4448968255b4027e00b4e5887d69602ae7ff"
+                }
+            },
+            "Code": {
+                "RepositoryType": "S3",
+                "Location": "https://awslambda-eu-west-1-tasks.s3.eu-west-1.amazonaws.com/snapshots/423623856894/cmtr-0e9eb049-api_handler-a704b0fe-19dd-41df-b829-2931b74288a7?versionId=TYAy1.A81SMqpcWJ6z7HgNbvNiWPil_0&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFYaCWV1LXdlc3QtMSJIMEYCIQCtDUq9bQ1FdIUNGG%2Bz2TiG4kWJU4ji9VNHFCggAmVcFAIhAMUTiAhNWJDctWVEUD%2BIUQI88bpGlQL4o6FDs9GXyNoPKpICCL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBBoMOTU0MzY5MDgyNTExIgzHAOPxTyL%2BkQYwlc4q5gFeYQv5LcSaeZd5KBv3ZAwmm1DcQhiOyAQ3Qay3n8Gme%2F3L7lAzwBSs2NS9ATY7dybHGHy6OxbIyRkO9OFlXSsoaGGfept%2BPxpmBhpbb1xIZE1gBobGILwmUCw0Xx77Qf1iXrKy0%2Bj0%2FoUpWvLSTHn1%2BiRtoOkNh3VI8X%2BA9KhiF2CzM9ruD61IAgXq1Xr2wqH8W75rarFd8h8nJGUoPljZUxK9KZKkvaSJQZrq5VZvbqXfu8ZJn5HRPXt4DREpQaEICHK%2F36pLO7D6BS%2BDEIKxeg9MNVPRU%2FKHav0v1EX82EnfX22CNDDK46%2B%2FBjqOAXswXFxzWAHc6Uj6IKYnttY4RnyQi8LN6UWbeLhmjg%2FsvguB8RH0QUJcMqNPTEI%2BURnWrakgLxLmgvsGgNmrm4ijGD5oGEJ3eFjJxQstzGUwTuxreOCbLtqKbYfh2pJ%2FJk55rTO84Y%2FFYpssfLlZuUG%2FFxbvbrbgwGw03UsEB2BPePmITrF%2F903vVPfYU%2Bs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250401T180115Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA54NGUQSHQHW7WMSS%2F20250401%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=562a32a1fa162b25e5faf7e252fafac55f31e50b210b48176c2d9fec0bca808c"
+            },
+            "Tags": {
+                "run_id": "JAP-12",
+                "user_id": "0e9eb049",
+                "run_type": "stm",
+                "type": "user"
+            }
+        }
+    },
+    "arn:aws:apigateway:eu-west-1::/restapis/ekata76lx2": {
+        "resource_name": "cmtr-0e9eb049-task5_api",
+        "resource_meta": {
+            "resource_type": "api_gateway",
+            "deploy_stage": "api",
+            "dependencies": [],
+            "resources": {
+                "/events": {
+                    "POST": {
+                        "authorization_type": "NONE",
+                        "integration_type": "AWS_PROXY",
+                        "api_key_required": false,
+                        "method_request_parameters": {},
+                        "integration_request_body_template": {},
+                        "responses": [],
+                        "integration_responses": [],
+                        "default_error_pattern": true
+                    }
+                }
+            },
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            },
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "df5a8b5f-bd8c-4836-9de7-071441a640a3",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Tue, 01 Apr 2025 18:30:26 GMT",
+                    "content-type": "application/json",
+                    "content-length": "324",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "df5a8b5f-bd8c-4836-9de7-071441a640a3",
+                    "x-amz-apigw-id": "IWyOgKcwDoEEcgQ="
+                },
+                "RetryAttempts": 0
+            },
+            "id": "ekata76lx2",
+            "name": "cmtr-0e9eb049-task5_api",
+            "createdDate": "2025-04-01T17:58:11+03:00",
+            "apiKeySource": "HEADER",
+            "endpointConfiguration": {
+                "types": [
+                    "EDGE"
+                ]
+            },
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            },
+            "disableExecuteApiEndpoint": false,
+            "resources": [
+                {
+                    "id": "24ng7xyby2",
+                    "path": "/"
+                },
+                {
+                    "id": "adyc9e",
+                    "parentId": "24ng7xyby2",
+                    "pathPart": "events",
+                    "path": "/events"
+                }
+            ]
+        }
+    },
+    "arn:aws:lambda:eu-west-1:423623856894:function:cmtr-0e9eb049-api_handler:learn": {
+        "resource_name": "cmtr-0e9eb049-api_handler",
+        "resource_meta": {
+            "version": "1.0",
+            "name": "cmtr-0e9eb049-api_handler",
+            "func_name": "SimpleLambdaFunction::SimpleLambdaFunction.Function::FunctionHandler",
+            "resource_type": "lambda",
+            "iam_role_name": "cmtr-0e9eb049-api_handler-role",
+            "runtime": "dotnet8",
+            "memory": 128,
+            "timeout": 100,
+            "lambda_path": "lambdas\\api_handler",
+            "dependencies": [],
+            "event_sources": [],
+            "env_variables": {},
+            "publish_version": true,
+            "alias": "learn",
+            "url_config": {},
+            "ephemeral_storage": 512,
+            "tags": {
+                "run_id": "JAP-12",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "0e9eb049"
+            },
+            "s3_path": "task05_250401.213006/api_handler-1.0.zip",
+            "region": "eu-west-1"
+        },
+        "description": {
+            "ResponseMetadata": {
+                "RequestId": "afb16c7d-d6dc-43d0-94f8-504336f66ded",
+                "HTTPStatusCode": 200,
+                "HTTPHeaders": {
+                    "date": "Tue, 01 Apr 2025 18:30:25 GMT",
+                    "content-type": "application/json",
+                    "content-length": "2887",
+                    "connection": "keep-alive",
+                    "x-amzn-requestid": "afb16c7d-d6dc-43d0-94f8-504336f66ded"
+                },
+                "RetryAttempts": 0
+            },
+            "Configuration": {
+                "FunctionName": "cmtr-0e9eb049-api_handler",
+                "Runtime": "dotnet8",
+                "Role": "arn:aws:iam::423623856894:role/cmtr-0e9eb049-api_handler-role",
+                "Handler": "SimpleLambdaFunction::SimpleLambdaFunction.Function::FunctionHandler",
+                "CodeSize": 766769,
+                "Description": " ",
+                "Timeout": 100,
+                "MemorySize": 128,
+                "LastModified": "2025-04-01T14:58:07.090+0000",
+                "CodeSha256": "04r+UvcwyUTHXqMiDomt4Jl40L2+lqdDya3wuDpwKTU=",
+                "Version": "$LATEST",
+                "TracingConfig": {
+                    "Mode": "PassThrough"
+                },
+                "RevisionId": "425ae08b-5ca7-4711-bfa2-cfcba4aae0fe",
+                "Layers": [],
+                "State": "Active",
+                "LastUpdateStatus": "Successful",
+                "PackageType": "Zip",
+                "Architectures": [
+                    "x86_64"
+                ],
+                "EphemeralStorage": {
+                    "Size": 512
+                },
+                "SnapStart": {
+                    "ApplyOn": "None",
+                    "OptimizationStatus": "Off"
+                },
+                "RuntimeVersionConfig": {
+                    "RuntimeVersionArn": "arn:aws:lambda:eu-west-1::runtime:c6c58e7e4df0b9303cd24674807e4448968255b4027e00b4e5887d69602ae7ff"
+                }
+            },
+            "Code": {
+                "RepositoryType": "S3",
+                "Location": "https://awslambda-eu-west-1-tasks.s3.eu-west-1.amazonaws.com/snapshots/423623856894/cmtr-0e9eb049-api_handler-a704b0fe-19dd-41df-b829-2931b74288a7?versionId=TYAy1.A81SMqpcWJ6z7HgNbvNiWPil_0&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFUaCWV1LXdlc3QtMSJGMEQCIHmQ7lsbii39PuaT%2Fvp5dnGMEdBB8oQuA9Jl5QNvZDU6AiApvsQZvjQ%2FfFBrxnXWSAiZJT%2BwMz6xG%2Bd0KPyFepmM8SqSAgi%2B%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAQaDDk1NDM2OTA4MjUxMSIMeHXxlXFMB8k%2Ff3hLKuYBQTJ%2Bwm11EiAWVp2O6lEd2g26xUnqo52R6NDfXY7%2Fp0zh37ZuX%2BH2iOrbRuIPOQTDAKwouxnPWAghhBQSjcAO7E3l80qjvFtT%2FDM%2BgCI0C1xpp2vNGH0vrDVsV0Wfg5%2B01BzSdAtQrZBi5UCuKcfIZgdVEL68rWnxiCAOf8eYV%2FLbURePKPO%2BZ5yWFajnXH6JBt68td97H0Aby7EW1TiagybdGeAWoiOawaBG3w%2FHGZ%2BVp2oX%2BBkRWGjI9sqBqgrAarSylX7c5uMrP%2BESD3ME6ZaHH1jhgi4Nt09iO9URoe7cGwGYGdAww8evvwY6kAFdIminw%2FWnCUlbx4EhMF6403Mn%2FDXZpvvCzskMGPPnas6WrAdbIq0e4B9Gz9toyKgTebd3yXVZU0sp5SqqFxbkzP9yBg7gL8lXyRUw8FWJSH32DERsNTIYbSt0w3Bg7pB74GvuD0jYUMpRNVKnavY5E6diii89qWufVNaInpcD0YRdCXh5AdKe7iVo%2BzYZd5c%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250401T183025Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Credential=ASIA54NGUQSHUAXB6CJN%2F20250401%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=1c83b69b17591e477866c4faff605f9a23f8d6d4826b793865d16c85ff9e2c08"
+            },
+            "Tags": {
+                "run_id": "JAP-12",
+                "user_id": "0e9eb049",
+                "run_type": "stm",
+                "type": "user"
+            }
+        }
+    }
+}
+2025-04-01 21:33:24,145 [INFO] USER:sofia deployment_processor.py:501:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved
+2025-04-01 21:33:24,145 [INFO] USER:sofia deployment_processor.py:524:create_deployment_resources LOG: Going to deploy AWS resources
+2025-04-01 21:33:24,564 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing iam_policy resources
+2025-04-01 21:33:25,789 [WARNING] USER:sofia iam_resource.py:117:_create_policy_from_meta LOG: IAM policy cmtr-0e9eb049-lambda-basic-execution exists.
+2025-04-01 21:33:25,982 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing iam_role resources
+2025-04-01 21:33:26,153 [WARNING] USER:sofia iam_resource.py:143:_create_role_from_meta LOG: IAM role cmtr-0e9eb049-api_handler-role exists.
+2025-04-01 21:33:26,154 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing dynamodb_table resources
+2025-04-01 21:33:26,990 [WARNING] USER:sofia dynamo_db_resource.py:242:_create_dynamodb_table_from_meta LOG: cmtr-0e9eb049-Events table exists.
+2025-04-01 21:33:26,990 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing lambda resources
+2025-04-01 21:33:28,758 [WARNING] USER:sofia lambda_resource.py:307:_create_lambda_from_meta LOG: cmtr-0e9eb049-api_handler lambda exists.
+2025-04-01 21:33:28,759 [INFO] USER:sofia deployment_processor.py:89:_process_resources LOG: Processing api_gateway resources
+2025-04-01 21:33:29,808 [INFO] USER:sofia api_gateway_resource.py:758:describe_api_resources LOG: Described cmtr-0e9eb049-task5_api API Gateway.
+2025-04-01 21:33:29,808 [INFO] USER:sofia api_gateway_resource.py:372:_create_api_gateway_from_meta LOG: Api gateway with name 'cmtr-0e9eb049-task5_api' exists. Returning
+2025-04-01 21:33:29,809 [INFO] USER:sofia deployment_processor.py:575:create_deployment_resources LOG: AWS resources were deployed successfully
+2025-04-01 21:33:29,809 [INFO] USER:sofia deployment_processor.py:578:create_deployment_resources LOG: Going to apply dynamic changes
+2025-04-01 21:33:29,810 [INFO] USER:sofia deployment_processor.py:580:create_deployment_resources LOG: Dynamic changes were applied successfully
+2025-04-01 21:33:29,810 [INFO] USER:sofia deployment_processor.py:582:create_deployment_resources LOG: Going to apply post deployment tags
+2025-04-01 21:33:29,820 [INFO] USER:sofia group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-04-01 21:33:29,820 [INFO] USER:sofia deployment_processor.py:585:create_deployment_resources LOG: Going to create deploy output
+2025-04-01 21:33:30,029 [INFO] USER:sofia bundle_processor.py:73:create_deploy_output LOG: Output file with name task05_250401.213309/outputs/task05.json has been created
+2025-04-01 21:33:30,029 [INFO] USER:sofia deployment_processor.py:595:create_deployment_resources LOG: Deploy output for task05 was created.
+2025-04-01 21:33:30,029 [INFO] USER:sofia handlers.py:357:deploy LOG: Backend resources were deployed.
+2025-04-01 21:33:30,030 [INFO] USER:sofia helper.py:347:timed LOG: Stage deploy, elapsed time: 0:00:07.434023
+2025-04-01 21:33:30,410 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:33:30,410 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:33:30,757 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced

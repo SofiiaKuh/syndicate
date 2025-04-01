@@ -34,7 +34,7 @@
         "POST": {
           "authorization_type": "NONE",
           "integration_type": "lambda",
-          "lambda_name": "api_handler",
+          "lambda_name": "SimpleLambdaFunction::SimpleLambdaFunction.Function::FunctionHandler",
           "api_key_required": false,
           "method_request_parameters": {},
           "integration_request_body_template": {},

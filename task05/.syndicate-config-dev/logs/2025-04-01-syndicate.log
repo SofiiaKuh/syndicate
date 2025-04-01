@@ -7226,3 +7226,22 @@ C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\tas
 2025-04-01 20:36:23,852 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing iam_role resources
 2025-04-01 20:36:24,034 [WARNING] USER:sofia iam_resource.py:143:_create_role_from_meta LOG: IAM role cmtr-0e9eb049-api_handler-role exists.
 2025-04-01 20:36:24,034 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing dynamodb_table resources
+2025-04-01 20:36:24,771 [WARNING] USER:sofia dynamo_db_resource.py:242:_create_dynamodb_table_from_meta LOG: cmtr-0e9eb049-Events table exists.
+2025-04-01 20:36:24,773 [INFO] USER:sofia deployment_processor.py:75:_process_resources LOG: Processing lambda resources
+2025-04-01 20:36:26,142 [WARNING] USER:sofia lambda_resource.py:307:_create_lambda_from_meta LOG: cmtr-0e9eb049-api_handler lambda exists.
+2025-04-01 20:36:26,143 [INFO] USER:sofia deployment_processor.py:89:_process_resources LOG: Processing api_gateway resources
+2025-04-01 20:36:27,135 [INFO] USER:sofia api_gateway_resource.py:758:describe_api_resources LOG: Described cmtr-0e9eb049-task5_api API Gateway.
+2025-04-01 20:36:27,135 [INFO] USER:sofia api_gateway_resource.py:372:_create_api_gateway_from_meta LOG: Api gateway with name 'cmtr-0e9eb049-task5_api' exists. Returning
+2025-04-01 20:36:27,136 [INFO] USER:sofia deployment_processor.py:575:create_deployment_resources LOG: AWS resources were deployed successfully
+2025-04-01 20:36:27,137 [INFO] USER:sofia deployment_processor.py:578:create_deployment_resources LOG: Going to apply dynamic changes
+2025-04-01 20:36:27,137 [INFO] USER:sofia deployment_processor.py:580:create_deployment_resources LOG: Dynamic changes were applied successfully
+2025-04-01 20:36:27,137 [INFO] USER:sofia deployment_processor.py:582:create_deployment_resources LOG: Going to apply post deployment tags
+2025-04-01 20:36:27,146 [INFO] USER:sofia group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-04-01 20:36:27,146 [INFO] USER:sofia deployment_processor.py:585:create_deployment_resources LOG: Going to create deploy output
+2025-04-01 20:36:27,337 [INFO] USER:sofia bundle_processor.py:73:create_deploy_output LOG: Output file with name task05_250401.203601/outputs/task05.json has been created
+2025-04-01 20:36:27,337 [INFO] USER:sofia deployment_processor.py:595:create_deployment_resources LOG: Deploy output for task05 was created.
+2025-04-01 20:36:27,338 [INFO] USER:sofia handlers.py:357:deploy LOG: Backend resources were deployed.
+2025-04-01 20:36:27,339 [INFO] USER:sofia helper.py:347:timed LOG: Stage deploy, elapsed time: 0:00:06.203994
+2025-04-01 20:36:27,574 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 20:36:27,574 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 20:36:27,820 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced

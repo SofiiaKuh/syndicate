@@ -6,11 +6,19 @@ lambdas:
     runtime: dotnet
 locks:
   modification_lock:
-    last_modification_date: '2025-04-01T17:36:20Z'
-    is_locked: true
+    last_modification_date: '2025-04-01T17:36:27Z'
+    is_locked: false
     initiator: sofia
-    locked_till: '2025-04-01T17:56:20Z'
 events:
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250401.203601
+  deploy_name: task05
+  time_start: '2025-04-01T20:36:21Z'
+  time_end: '2025-04-01T20:36:27Z'
+  duration_sec: 6.204
+  status: succeeded
+  rollback_on_error: false
 - operation: build
   initiator: sofia
   bundle_name: task05_250401.203601
@@ -747,9 +755,9 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250401.202619
+  bundle_name: task05_250401.203601
   deploy_name: task05
-  time_start: '2025-04-01T20:26:31Z'
-  time_end: '2025-04-01T20:26:37Z'
-  duration_sec: 5.963
+  time_start: '2025-04-01T20:36:21Z'
+  time_end: '2025-04-01T20:36:27Z'
+  duration_sec: 6.204
   is_succeeded: true

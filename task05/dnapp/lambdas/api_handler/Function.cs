@@ -50,7 +50,6 @@ public class Function
 			{
 				StatusCode = 201,
 				Body = JsonSerializer.Serialize(new { statusCode = 201, @event = response }),
-				Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
 			};
 		}
 		catch (Exception ex)
@@ -59,7 +58,7 @@ public class Function
 			return new APIGatewayProxyResponse
 			{
 				StatusCode = 500,
-				Body = JsonSerializer.Serialize(new { message = "Internal Server Error" })
+				Body = JsonSerializer.Serialize(new { statusCode = 201, message = "Internal Server Error" })
 			};
 		}
 	}

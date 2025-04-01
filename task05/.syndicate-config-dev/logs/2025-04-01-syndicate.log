@@ -1,0 +1,1251 @@
+2025-04-01 17:03:00,475 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:03:00,929 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:03:02,627 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:03:02,628 [INFO] USER:sofia helper.py:666:check_lambda_name LOG: Validating lambda name: 'api_handler'
+2025-04-01 17:03:02,629 [INFO] USER:sofia helper.py:681:check_lambda_name LOG: Lambda name: 'api_handler' passed the validation
+2025-04-01 17:03:02,630 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:03:02,631 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:03:02,633 [INFO] USER:sofia generate.py:116:lambda_function LOG: Lambda names: ('api_handler',)
+2025-04-01 17:03:02,634 [INFO] USER:sofia generate.py:117:lambda_function LOG: Runtime: dotnet
+2025-04-01 17:03:02,634 [INFO] USER:sofia generate.py:118:lambda_function LOG: Project path: C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05
+2025-04-01 17:03:02,645 [INFO] USER:sofia lambda_function.py:528:_generate_dotnet_lambdas LOG: Lambda api_handler created
+2025-04-01 17:03:02,647 [INFO] USER:sofia lambda_function.py:175:generate_lambda_function LOG: Lambda api_handler has been successfully added to the project.
+2025-04-01 17:03:02,648 [INFO] USER:sofia helper.py:347:timed LOG: Stage lambda_function, elapsed time: 0:00:00.015976
+2025-04-01 17:10:15,345 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:10:15,813 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:10:17,532 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:10:17,532 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:10:17,730 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:10:17,731 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:10:17,732 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:10:17,733 [INFO] USER:sofia base_generator.py:226:_validate_resource_name LOG: Validating resource name: 'task5_api'
+2025-04-01 17:10:17,734 [INFO] USER:sofia base_generator.py:242:_validate_resource_name LOG: Resource name: 'task5_api' passed the validation
+2025-04-01 17:10:17,736 [INFO] USER:sofia base_generator.py:70:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'
+2025-04-01 17:10:17,739 [INFO] USER:sofia base_generator.py:90:_find_resources_by_type LOG: Looking for resource 'api_gateway' in meta
+2025-04-01 17:10:17,768 [INFO] USER:sofia base_generator.py:96:_find_resources_by_type LOG: Found '{'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\deployment_resources.json': set(), 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler\\deployment_resources.json': set()}' inside with type 'api_gateway'
+2025-04-01 17:10:17,768 [INFO] USER:sofia base_generator.py:106:_get_resource_meta_paths LOG: Looking for api_gateway 'task5_api' in meta...
+2025-04-01 17:10:17,768 [INFO] USER:sofia base_generator.py:111:_get_resource_meta_paths LOG: Found api_gateway 'task5_api' in these files: '[]'
+2025-04-01 17:10:17,768 [INFO] USER:sofia base_generator.py:220:_find_file_with_duplicate LOG: No duplicated api_gateway with name 'task5_api' was found
+2025-04-01 17:10:17,769 [INFO] USER:sofia base_generator.py:155:generate_deployment_resource LOG: Generating deployment resources for api_gateway 'task5_api'
+2025-04-01 17:10:17,770 [INFO] USER:sofia base_generator.py:163:_generate_resource_configuration LOG: Generating configuration for api_gateway 'task5_api'
+2025-04-01 17:10:17,770 [INFO] USER:sofia base_generator.py:40:_resolve_configuration LOG: Resolving not required params...
+2025-04-01 17:10:17,770 [INFO] USER:sofia base_generator.py:60:_resolve_configuration LOG: Setting given value 'api\' for param 'deploy_stage'
+2025-04-01 17:10:17,770 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'dependencies'
+2025-04-01 17:10:17,770 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'resources'
+2025-04-01 17:10:17,770 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'tags'
+2025-04-01 17:10:17,771 [INFO] USER:sofia base_generator.py:205:write LOG: Writing deployment resources for api_gateway 'task5_api' to the file 'C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\deployment_resources.json'
+2025-04-01 17:10:17,774 [INFO] USER:sofia meta.py:269:api_gateway LOG: Api gateway 'task5_api' was added successfully
+2025-04-01 17:10:17,774 [INFO] USER:sofia helper.py:347:timed LOG: Stage api_gateway, elapsed time: 0:00:00.041003
+2025-04-01 17:10:25,397 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:10:25,820 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:10:27,494 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:10:27,495 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:10:27,636 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:10:27,637 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:10:27,638 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:10:27,641 [INFO] USER:sofia base_generator.py:226:_validate_resource_name LOG: Validating resource name: 'task5_api'
+2025-04-01 17:10:27,641 [INFO] USER:sofia base_generator.py:242:_validate_resource_name LOG: Resource name: 'task5_api' passed the validation
+2025-04-01 17:10:27,642 [INFO] USER:sofia base_generator.py:70:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'
+2025-04-01 17:10:27,643 [INFO] USER:sofia base_generator.py:90:_find_resources_by_type LOG: Looking for resource 'api_gateway' in meta
+2025-04-01 17:10:27,659 [INFO] USER:sofia base_generator.py:96:_find_resources_by_type LOG: Found '{'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\deployment_resources.json': {'task5_api'}, 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler\\deployment_resources.json': set()}' inside with type 'api_gateway'
+2025-04-01 17:10:27,659 [INFO] USER:sofia base_generator.py:106:_get_resource_meta_paths LOG: Looking for api_gateway 'task5_api' in meta...
+2025-04-01 17:10:27,659 [INFO] USER:sofia base_generator.py:109:_get_resource_meta_paths LOG: Found 'task5_api' in meta from 'C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\deployment_resources.json'
+2025-04-01 17:10:27,660 [INFO] USER:sofia base_generator.py:111:_get_resource_meta_paths LOG: Found api_gateway 'task5_api' in these files: '['C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\deployment_resources.json']'
+2025-04-01 17:10:27,660 [WARNING] USER:sofia base_generator.py:217:_find_file_with_duplicate LOG: Duplicated api_gateway with name 'task5_api' was found in: ['C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\deployment_resources.json']
+2025-04-01 17:10:27,660 [WARNING] USER:sofia base_generator.py:192:write LOG: Found duplicate while generating meta. Resource with name 'task5_api' was found in file 'C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\deployment_resources.json'.
+2025-04-01 17:10:29,977 [WARNING] USER:sofia base_generator.py:194:write LOG: Overwriting resource 'task5_api'
+2025-04-01 17:10:29,979 [INFO] USER:sofia base_generator.py:155:generate_deployment_resource LOG: Generating deployment resources for api_gateway 'task5_api'
+2025-04-01 17:10:29,980 [INFO] USER:sofia base_generator.py:163:_generate_resource_configuration LOG: Generating configuration for api_gateway 'task5_api'
+2025-04-01 17:10:29,980 [INFO] USER:sofia base_generator.py:40:_resolve_configuration LOG: Resolving not required params...
+2025-04-01 17:10:29,981 [INFO] USER:sofia base_generator.py:60:_resolve_configuration LOG: Setting given value 'api' for param 'deploy_stage'
+2025-04-01 17:10:29,981 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'dependencies'
+2025-04-01 17:10:29,981 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'resources'
+2025-04-01 17:10:29,981 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'tags'
+2025-04-01 17:10:29,981 [INFO] USER:sofia base_generator.py:205:write LOG: Writing deployment resources for api_gateway 'task5_api' to the file 'C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\deployment_resources.json'
+2025-04-01 17:10:29,983 [INFO] USER:sofia meta.py:269:api_gateway LOG: Api gateway 'task5_api' was added successfully
+2025-04-01 17:10:29,986 [INFO] USER:sofia helper.py:347:timed LOG: Stage api_gateway, elapsed time: 0:00:02.344677
+2025-04-01 17:13:36,246 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:13:36,684 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:13:38,279 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:13:38,279 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:13:38,416 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:13:38,417 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:13:38,418 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:14:19,163 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:14:19,615 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:14:21,214 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:14:21,214 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:14:21,357 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:14:21,358 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:14:21,360 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:17:20,050 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:17:20,463 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:17:22,096 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:17:22,096 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:17:22,224 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:17:22,224 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:17:22,225 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:17:30,857 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:17:31,257 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:17:32,821 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:17:32,821 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:17:32,956 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:17:32,957 [INFO] USER:sofia helper.py:655:resolve_project_path LOG: Parameter: 'project_path' wasn't specified. Getting automatically
+2025-04-01 17:17:32,958 [INFO] USER:sofia helper.py:659:resolve_project_path LOG: Path: 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05' was assigned to the parameter: 'project_path'
+2025-04-01 17:17:32,960 [INFO] USER:sofia base_generator.py:226:_validate_resource_name LOG: Validating resource name: 'Events'
+2025-04-01 17:17:32,960 [INFO] USER:sofia base_generator.py:242:_validate_resource_name LOG: Resource name: 'Events' passed the validation
+2025-04-01 17:17:32,961 [INFO] USER:sofia base_generator.py:70:_get_deployment_resources_files LOG: Recursively getting all the deployment_resources.json with root 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'
+2025-04-01 17:17:32,963 [INFO] USER:sofia base_generator.py:90:_find_resources_by_type LOG: Looking for resource 'dynamodb_table' in meta
+2025-04-01 17:17:32,981 [INFO] USER:sofia base_generator.py:96:_find_resources_by_type LOG: Found '{'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\deployment_resources.json': set(), 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler\\deployment_resources.json': set()}' inside with type 'dynamodb_table'
+2025-04-01 17:17:32,981 [INFO] USER:sofia base_generator.py:106:_get_resource_meta_paths LOG: Looking for dynamodb_table 'Events' in meta...
+2025-04-01 17:17:32,981 [INFO] USER:sofia base_generator.py:111:_get_resource_meta_paths LOG: Found dynamodb_table 'Events' in these files: '[]'
+2025-04-01 17:17:32,981 [INFO] USER:sofia base_generator.py:220:_find_file_with_duplicate LOG: No duplicated dynamodb_table with name 'Events' was found
+2025-04-01 17:17:32,982 [INFO] USER:sofia base_generator.py:155:generate_deployment_resource LOG: Generating deployment resources for dynamodb_table 'Events'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:163:_generate_resource_configuration LOG: Generating configuration for dynamodb_table 'Events'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:40:_resolve_configuration LOG: Resolving not required params...
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:60:_resolve_configuration LOG: Setting given value 'Id' for param 'hash_key_name'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:60:_resolve_configuration LOG: Setting given value 'S' for param 'hash_key_type'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:56:_resolve_configuration LOG: Setting default value '1' for param 'read_capacity'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:56:_resolve_configuration LOG: Setting default value '1' for param 'write_capacity'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'global_indexes'
+2025-04-01 17:17:32,984 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '[]' of the class '<class 'list'>' for param 'autoscaling'
+2025-04-01 17:17:32,985 [INFO] USER:sofia base_generator.py:47:_resolve_configuration LOG: Setting default value - the object '{}' of the class '<class 'dict'>' for param 'tags'
+2025-04-01 17:17:32,985 [INFO] USER:sofia base_generator.py:205:write LOG: Writing deployment resources for dynamodb_table 'Events' to the file 'C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\deployment_resources.json'
+2025-04-01 17:17:32,988 [INFO] USER:sofia meta.py:130:dynamodb LOG: Table 'Events' was added successfully!
+2025-04-01 17:17:32,990 [INFO] USER:sofia helper.py:347:timed LOG: Stage dynamodb, elapsed time: 0:00:00.030702
+2025-04-01 17:17:42,567 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:17:42,969 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:17:44,547 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:17:44,547 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:17:44,693 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:17:46,324 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:17:46,327 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:17:46,329 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.004183
+2025-04-01 17:17:46,342 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.171744
+2025-04-01 17:17:46,345 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:17:46,346 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:17:46,347 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:17:46,347 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:17:46,348 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:17:46,349 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:17:46,349 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:17:46,353 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:17:47,772 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:17:47,773 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:18:07,529 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 6.13 sec).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(4,14): error CS0234: The type or namespace name 'DynamoDBv2' does not exist in the namespace 'Amazon' (are you missing an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(5,14): error CS0234: The type or namespace name 'DynamoDBv2' does not exist in the namespace 'Amazon' (are you missing an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(16,26): error CS0246: The type or namespace name 'AmazonDynamoDBClient' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:18:07,616 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 6.13 sec).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(4,14): error CS0234: The type or namespace name 'DynamoDBv2' does not exist in the namespace 'Amazon' (are you missing an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(5,14): error CS0234: The type or namespace name 'DynamoDBv2' does not exist in the namespace 'Amazon' (are you missing an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(16,26): error CS0246: The type or namespace name 'AmazonDynamoDBClient' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 6.13 sec).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(4,14): error CS0234: The type or namespace name 'DynamoDBv2' does not exist in the namespace 'Amazon' (are you missing an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(5,14): error CS0234: The type or namespace name 'DynamoDBv2' does not exist in the namespace 'Amazon' (are you missing an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(16,26): error CS0246: The type or namespace name 'AmazonDynamoDBClient' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:18:07,621 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:21.268098
+2025-04-01 17:19:27,377 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:19:27,848 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:19:29,436 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:19:29,436 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:19:29,596 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:19:31,202 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:19:31,204 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:19:31,204 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.002098
+2025-04-01 17:19:31,211 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.171929
+2025-04-01 17:19:31,213 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:19:31,214 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:19:31,214 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:19:31,215 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:19:31,216 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:19:31,216 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:19:31,216 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:19:31,223 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:19:32,131 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:19:32,135 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:19:38,457 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(14,26): error CS0246: The type or namespace name 'AmazonDynamoDBClient' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:19:38,474 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(14,26): error CS0246: The type or namespace name 'AmazonDynamoDBClient' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(14,26): error CS0246: The type or namespace name 'AmazonDynamoDBClient' could not be found (are you missing a using directive or an assembly reference?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:19:38,485 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:07.262118
+2025-04-01 17:23:03,497 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:23:04,046 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:23:05,786 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:23:05,787 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:23:05,980 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:23:07,574 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:23:07,575 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:23:07,576 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.002024
+2025-04-01 17:23:07,586 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.172305
+2025-04-01 17:23:07,589 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:23:07,619 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:23:07,620 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:23:07,620 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:23:07,621 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:23:07,622 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:23:07,622 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:23:07,631 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:23:08,654 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:23:08,658 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:23:14,764 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 695 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:23:14,782 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 695 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 695 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:23:14,788 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:07.156307
+2025-04-01 17:27:27,832 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:27:28,586 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:27:30,375 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:27:30,375 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:27:30,574 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:27:32,287 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:27:32,288 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:27:32,290 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.002970
+2025-04-01 17:27:32,301 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.172730
+2025-04-01 17:27:32,304 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:27:32,349 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:27:32,349 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:27:32,350 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:27:32,351 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:27:32,351 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:27:32,351 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:27:32,363 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:27:33,688 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:27:33,693 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:27:40,714 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,16): error CS0144: Cannot create an instance of the abstract type or interface 'DynamoDBEntry' [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,68): error CS0117: 'DynamoDBEntry' does not contain a definition for 'S' [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:27:40,737 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,16): error CS0144: Cannot create an instance of the abstract type or interface 'DynamoDBEntry' [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,68): error CS0117: 'DynamoDBEntry' does not contain a definition for 'S' [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,16): error CS0144: Cannot create an instance of the abstract type or interface 'DynamoDBEntry' [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,68): error CS0117: 'DynamoDBEntry' does not contain a definition for 'S' [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:27:40,741 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:08.378760
+2025-04-01 17:30:54,884 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:30:55,472 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:30:57,441 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:30:57,442 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:30:57,675 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:30:59,325 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:30:59,328 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:30:59,331 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.006547
+2025-04-01 17:30:59,346 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.173057
+2025-04-01 17:30:59,348 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:30:59,350 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:30:59,351 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:30:59,351 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:30:59,352 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:30:59,353 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:30:59,353 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:30:59,367 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:31:00,552 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:31:00,558 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:31:06,990 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:31:07,016 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:31:07,027 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:07.659363
+2025-04-01 17:33:53,416 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:33:53,931 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:33:55,674 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:33:55,674 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:33:55,866 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:33:57,540 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:33:57,541 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:33:57,542 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.001661
+2025-04-01 17:33:57,559 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.173355
+2025-04-01 17:33:57,562 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:33:57,562 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:33:57,563 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:33:57,563 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:33:57,564 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:33:57,564 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:33:57,565 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:33:57,581 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:33:58,606 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:33:58,611 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:34:05,396 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:34:05,414 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(31,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:34:05,418 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:07.837283
+2025-04-01 17:36:42,031 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:36:42,637 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:36:44,563 [ERROR] USER:sofia decorators.py:147:wrapper LOG: An unexpected error occurred: ClientError An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-04-01 17:36:44,578 [ERROR] USER:sofia decorators.py:148:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\decorators.py", line 137, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 116, in syndicate
+    initialize_project_state(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_not_sync_state=_not_require_state_sync(sys.argv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\__init__.py", line 205, in initialize_project_state
+    sync_project_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\sync_processor.py", line 34, in sync_project_state
+    PROJECT_STATE.save_to_remote()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\project_state.py", line 143, in save_to_remote
+    s3.put_object(file_obj=yaml.dump(dict_to_save, sort_keys=False),
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  key=key_compound,
+                  ^^^^^^^^^^^^^^^^^
+                  bucket=bucket_name,
+                  ^^^^^^^^^^^^^^^^^^^
+                  content_type='application/x-yaml')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 142, in wrapper
+    raise e
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 117, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\s3_connection.py", line 84, in put_object
+    self.resource.Bucket(bucket).put_object(Body=file_obj,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+                                            ContentType=content_type,
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            Key=key)
+                                            ^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\decorators.py", line 137, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 116, in syndicate
+    initialize_project_state(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_not_sync_state=_not_require_state_sync(sys.argv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\__init__.py", line 205, in initialize_project_state
+    sync_project_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\sync_processor.py", line 34, in sync_project_state
+    PROJECT_STATE.save_to_remote()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\project_state.py", line 143, in save_to_remote
+    s3.put_object(file_obj=yaml.dump(dict_to_save, sort_keys=False),
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  key=key_compound,
+                  ^^^^^^^^^^^^^^^^^
+                  bucket=bucket_name,
+                  ^^^^^^^^^^^^^^^^^^^
+                  content_type='application/x-yaml')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 142, in wrapper
+    raise e
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 117, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\s3_connection.py", line 84, in put_object
+    self.resource.Bucket(bucket).put_object(Body=file_obj,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+                                            ContentType=content_type,
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            Key=key)
+                                            ^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-04-01 17:37:18,581 [INFO] USER:sofia s3_resource.py:41:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-1605'
+2025-04-01 17:37:18,581 [INFO] USER:sofia s3_resource.py:74:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-1605'
+2025-04-01 17:37:18,582 [INFO] USER:sofia helper.py:533:convert LOG: Stripping run_id:JAP-12,run_type:stm,type:user,user_id:0e9eb049 from "," a bit..
+2025-04-01 17:37:18,582 [INFO] USER:sofia helper.py:537:convert LOG: Converting: run_id:JAP-12,run_type:stm,type:user,user_id:0e9eb049 to dict..
+2025-04-01 17:37:18,582 [INFO] USER:sofia helper.py:549:convert LOG: Converted to such a dict: {'run_id': 'JAP-12', 'run_type': 'stm', 'type': 'user', 'user_id': '0e9eb049'}
+2025-04-01 17:37:20,582 [WARNING] USER:sofia generator.py:77:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-04-01 17:37:20,583 [WARNING] USER:sofia generator.py:94:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\.syndicate-config-dev
+2025-04-01 17:37:20,597 [INFO] USER:sofia generator.py:158:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\.syndicate-config-dev
+2025-04-01 17:37:20,604 [INFO] USER:sofia helper.py:347:timed LOG: Stage config, elapsed time: 0:00:02.021348
+2025-04-01 17:37:26,244 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:37:26,764 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:37:28,420 [ERROR] USER:sofia decorators.py:147:wrapper LOG: An unexpected error occurred: ClientError An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-04-01 17:37:28,432 [ERROR] USER:sofia decorators.py:148:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\decorators.py", line 137, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 116, in syndicate
+    initialize_project_state(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_not_sync_state=_not_require_state_sync(sys.argv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\__init__.py", line 205, in initialize_project_state
+    sync_project_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\sync_processor.py", line 34, in sync_project_state
+    PROJECT_STATE.save_to_remote()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\project_state.py", line 143, in save_to_remote
+    s3.put_object(file_obj=yaml.dump(dict_to_save, sort_keys=False),
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  key=key_compound,
+                  ^^^^^^^^^^^^^^^^^
+                  bucket=bucket_name,
+                  ^^^^^^^^^^^^^^^^^^^
+                  content_type='application/x-yaml')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 142, in wrapper
+    raise e
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 117, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\s3_connection.py", line 84, in put_object
+    self.resource.Bucket(bucket).put_object(Body=file_obj,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+                                            ContentType=content_type,
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            Key=key)
+                                            ^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\decorators.py", line 137, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 116, in syndicate
+    initialize_project_state(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_not_sync_state=_not_require_state_sync(sys.argv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\__init__.py", line 205, in initialize_project_state
+    sync_project_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\sync_processor.py", line 34, in sync_project_state
+    PROJECT_STATE.save_to_remote()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\project_state.py", line 143, in save_to_remote
+    s3.put_object(file_obj=yaml.dump(dict_to_save, sort_keys=False),
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  key=key_compound,
+                  ^^^^^^^^^^^^^^^^^
+                  bucket=bucket_name,
+                  ^^^^^^^^^^^^^^^^^^^
+                  content_type='application/x-yaml')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 142, in wrapper
+    raise e
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 117, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\s3_connection.py", line 84, in put_object
+    self.resource.Bucket(bucket).put_object(Body=file_obj,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+                                            ContentType=content_type,
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            Key=key)
+                                            ^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-04-01 17:39:40,040 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:39:40,538 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:39:42,147 [ERROR] USER:sofia decorators.py:147:wrapper LOG: An unexpected error occurred: ClientError An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-04-01 17:39:42,159 [ERROR] USER:sofia decorators.py:148:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\decorators.py", line 137, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 116, in syndicate
+    initialize_project_state(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_not_sync_state=_not_require_state_sync(sys.argv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\__init__.py", line 205, in initialize_project_state
+    sync_project_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\sync_processor.py", line 34, in sync_project_state
+    PROJECT_STATE.save_to_remote()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\project_state.py", line 143, in save_to_remote
+    s3.put_object(file_obj=yaml.dump(dict_to_save, sort_keys=False),
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  key=key_compound,
+                  ^^^^^^^^^^^^^^^^^
+                  bucket=bucket_name,
+                  ^^^^^^^^^^^^^^^^^^^
+                  content_type='application/x-yaml')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 142, in wrapper
+    raise e
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 117, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\s3_connection.py", line 84, in put_object
+    self.resource.Bucket(bucket).put_object(Body=file_obj,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+                                            ContentType=content_type,
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            Key=key)
+                                            ^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\decorators.py", line 137, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 116, in syndicate
+    initialize_project_state(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_not_sync_state=_not_require_state_sync(sys.argv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\__init__.py", line 205, in initialize_project_state
+    sync_project_state()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\sync_processor.py", line 34, in sync_project_state
+    PROJECT_STATE.save_to_remote()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\project_state\project_state.py", line 143, in save_to_remote
+    s3.put_object(file_obj=yaml.dump(dict_to_save, sort_keys=False),
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  key=key_compound,
+                  ^^^^^^^^^^^^^^^^^
+                  bucket=bucket_name,
+                  ^^^^^^^^^^^^^^^^^^^
+                  content_type='application/x-yaml')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 142, in wrapper
+    raise e
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\helper.py", line 117, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\connection\s3_connection.py", line 84, in put_object
+    self.resource.Bucket(bucket).put_object(Body=file_obj,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+                                            ContentType=content_type,
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                            Key=key)
+                                            ^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\factory.py", line 580, in do_action
+    response = action(self, *args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\boto3\resources\action.py", line 88, in __call__
+    response = getattr(parent.meta.client, operation_name)(*args, **params)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\botocore\client.py", line 960, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidAccessKeyId) when calling the PutObject operation: The AWS Access Key Id you provided does not exist in our records.
+2025-04-01 17:40:40,140 [INFO] USER:sofia s3_resource.py:41:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-1605'
+2025-04-01 17:40:40,140 [INFO] USER:sofia s3_resource.py:74:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-1605'
+2025-04-01 17:40:40,141 [INFO] USER:sofia helper.py:533:convert LOG: Stripping run_id:JAP-12,run_type:stm,type:user,user_id:0e9eb049 from "," a bit..
+2025-04-01 17:40:40,141 [INFO] USER:sofia helper.py:537:convert LOG: Converting: run_id:JAP-12,run_type:stm,type:user,user_id:0e9eb049 to dict..
+2025-04-01 17:40:40,141 [INFO] USER:sofia helper.py:549:convert LOG: Converted to such a dict: {'run_id': 'JAP-12', 'run_type': 'stm', 'type': 'user', 'user_id': '0e9eb049'}
+2025-04-01 17:40:42,183 [WARNING] USER:sofia generator.py:77:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-04-01 17:40:42,184 [ERROR] USER:sofia __init__.py:47:_mkdir LOG: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\.syndicate-config-dev'
+2025-04-01 17:40:42,186 [WARNING] USER:sofia generator.py:94:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:40:42,198 [INFO] USER:sofia generator.py:158:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:40:42,203 [INFO] USER:sofia helper.py:347:timed LOG: Stage config, elapsed time: 0:00:02.060962
+2025-04-01 17:52:10,570 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:52:11,623 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:52:13,515 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:52:13,516 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:52:13,721 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:52:15,379 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:52:15,381 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:52:15,384 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.005357
+2025-04-01 17:52:15,403 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.175213
+2025-04-01 17:52:15,407 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:52:15,411 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:52:15,411 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:52:15,412 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:52:15,424 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:52:15,424 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:52:15,425 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:52:15,442 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:52:16,791 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:52:16,797 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:52:28,588 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:52:28,652 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(33,23): error CS0266: Cannot implicitly convert type 'object' to 'Amazon.DynamoDBv2.DocumentModel.DynamoDBEntry'. An explicit conversion exists (are you missing a cast?) [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 17:52:28,660 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:13.217620
+2025-04-01 17:57:01,409 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 17:57:02,068 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 17:57:03,821 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 17:57:03,821 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 17:57:04,034 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 17:57:05,606 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 17:57:05,606 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 17:57:05,610 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.004390
+2025-04-01 17:57:05,634 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.175704
+2025-04-01 17:57:05,636 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 17:57:05,637 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 17:57:05,638 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 17:57:05,639 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 17:57:05,641 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 17:57:05,641 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 17:57:05,642 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 17:57:05,666 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 17:57:06,881 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 17:57:06,885 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 17:57:13,259 [INFO] USER:sofia dotnet.py:145:_build_dotnet_lambda_artifact LOG: Running the command "['dotnet', 'publish', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler', '-p:GenerateRuntimeConfigurationFiles=true', '--configuration', 'Release', '--framework', 'net8.0', '--runtime', 'linux-x64', '--self-contained', 'False', '--output', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\.syndicate-config-dev/bundles/task05_250401.175704/dotnet_tmp/lambda/api_handler']"
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\bin\Release\net8.0\linux-x64\SimpleLambdaFunction.dll
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev\bundles\task05_250401.175704\dotnet_tmp\lambda\api_handler\
+
+
+2025-04-01 17:57:13,877 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/bin"
+2025-04-01 17:57:13,885 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/obj"
+2025-04-01 17:57:13,913 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.175704/dotnet_tmp"
+2025-04-01 17:57:13,921 [INFO] USER:sofia handlers.py:888:assemble_dotnet LOG: DotNet artifacts were prepared successfully.
+2025-04-01 17:57:13,923 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:08.256609
+2025-04-01 17:57:13,946 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble, elapsed time: 0:00:08.312063
+2025-04-01 17:57:13,971 [INFO] USER:sofia handlers.py:1047:package_meta LOG: Package meta, bundle: task05_250401.175704
+2025-04-01 17:57:13,977 [INFO] USER:sofia meta_processor.py:526:create_meta LOG: Bundle path: C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05/bundles/task05_250401.175704
+2025-04-01 17:57:14,010 [INFO] USER:sofia helper.py:306:write_content_to_file LOG: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.175704\build_meta.json file was created.
+2025-04-01 17:57:14,011 [INFO] USER:sofia handlers.py:1050:package_meta LOG: Meta was configured successfully.
+2025-04-01 17:57:14,017 [INFO] USER:sofia helper.py:347:timed LOG: Stage package_meta, elapsed time: 0:00:00.046123
+2025-04-01 17:57:15,349 [INFO] USER:sofia handlers.py:1095:upload LOG: Upload bundle: task05_250401.175704
+2025-04-01 17:57:16,694 [INFO] USER:sofia bundle_processor.py:236:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-04-01 17:57:18,908 [INFO] USER:sofia handlers.py:1102:upload LOG: Bundle was uploaded successfully
+2025-04-01 17:57:18,908 [INFO] USER:sofia helper.py:347:timed LOG: Stage upload, elapsed time: 0:00:04.864650
+2025-04-01 17:57:18,936 [INFO] USER:sofia helper.py:347:timed LOG: Stage build, elapsed time: 0:00:14.899716

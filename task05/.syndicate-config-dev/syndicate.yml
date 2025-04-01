@@ -1,0 +1,16 @@
+account_id: '423623856894'
+deploy_target_bucket: syndicate-education-platform-custom-sandbox-artifacts-1605/0e9eb049/task05
+expiration: 2025-04-01 15:30:42.187756+00:00
+extended_prefix_mode: true
+project_path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05
+region: eu-west-1
+resources_prefix: cmtr-0e9eb049-
+tags:
+  run_id: JAP-12
+  run_type: stm
+  type: user
+  user_id: 0e9eb049
+temp_aws_access_key_id: ASIAWFIPTCL7PHHGSI7E
+temp_aws_secret_access_key: CAdcJzohXV4Up/NovWoALa6L0LPhE7lN5zwwu+Ew
+temp_aws_session_token: IQoJb3JpZ2luX2VjEFcaCXVzLWVhc3QtMSJIMEYCIQDNqgYPEp+8kX6WyxEotWdFWVpYCMEzXeVp6SFSbOIgJAIhAKNjEzqUj6DZIBk+of0Ic7B7bIN5ZNPPxBvcOQVynZ6zKuICCMD//////////wEQABoMNDIzNjIzODU2ODk0Igy+DaR+ZZ9ShSqJaucqtgJz/uzxA7fhfcrKUiWgVluQCMDPXErBojHhMR/nkcXY5vsrBsePRnOnp7fZao86C3VUcu3zayBhMz8jDgCo9opiIXnqxIhuXF+hL+95wkf9SmIvjEN2Qs+8JDjoq7sXWh/yczmcBt16vSpSQF0b+rfnjfxpnGZL0A69v9aaXvkDo/d/QvpAXHv2J4yw0HLMuy9LbxIEWMObQJBq/xVSfI9uOEypFZaIdWkYhDDqD83I6fUX4uZkRGySPnbUr4dRPNVWynt1xLrG9TBYe+jD68BhIfvMQEj/X8RWVjmO7r+mtGvGkV3LD/1H0ANLwSTapbbYvySHjOn+VoWlWxQ/Qs4bfTqZInfRn5o2+N+UImaGNkLFpVgELGnsoaevd7Uyc/awx/IetMT0Aol33tMT47/JzOHdaBPUMMn1r78GOpwB/u9jKX/vXMzeDxWAiXmy/NJunGzJqkWIIWySCJquq8zULhq9+rYD9MAvBM5mer8NzXqjxaFCA5ZR+XYq9l/+z0B5gqHoHZ+SKqZdDk6pFbDCxLKcCzGEdXn6VAyuzC/Pl0SGefhuOBXlDu9DZwbAHv1KK4y0kchupIH6sIFPKiuaVwy0dwSfWZI8kbGPPqf9gF8A1nHZySnlqUJ6
+use_temp_creds: false

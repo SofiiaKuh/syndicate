@@ -14102,3 +14102,215 @@ C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\tas
 2025-04-01 22:16:16,127 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
 2025-04-01 22:16:16,127 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
 2025-04-01 22:16:16,667 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 22:23:02,759 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 22:23:03,248 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 22:23:04,635 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 22:23:04,635 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 22:23:06,268 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 22:23:08,859 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 22:23:08,860 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 22:23:08,860 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.001065
+2025-04-01 22:23:08,946 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.222306
+2025-04-01 22:23:08,947 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 22:23:08,947 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 22:23:08,948 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 22:23:08,948 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 22:23:08,949 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 22:23:08,949 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 22:23:08,949 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 22:23:09,085 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 22:23:09,659 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 22:23:09,660 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 22:23:12,734 [ERROR] USER:sofia helper.py:98:wrapper LOG: ArtifactAssemblingError occurred: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 341 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1513: } expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1026: ) expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1002: ; expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1031: Type expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1514: { expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1055: An add or remove accessor expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,69): error CS1055: An add or remove accessor expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,79): error CS1519: Invalid token ')' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(66,13): error CS1519: Invalid token '=' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(66,46): error CS1519: Invalid token '{' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(67,4): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(67,5): error CS8803: Top-level statements must precede namespace and type declarations. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(68,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,20): error CS1026: ) expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,20): error CS1002: ; expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,22): error CS1001: Identifier expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,22): error CS1003: Syntax error, ',' expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(77,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(78,2): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(85,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 22:23:12,867 [ERROR] USER:sofia helper.py:99:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 341 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1513: } expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1026: ) expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1002: ; expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1031: Type expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1514: { expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1055: An add or remove accessor expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,69): error CS1055: An add or remove accessor expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,79): error CS1519: Invalid token ')' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(66,13): error CS1519: Invalid token '=' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(66,46): error CS1519: Invalid token '{' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(67,4): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(67,5): error CS8803: Top-level statements must precede namespace and type declarations. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(68,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,20): error CS1026: ) expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,20): error CS1002: ; expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,22): error CS1001: Identifier expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,22): error CS1003: Syntax error, ',' expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(77,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(78,2): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(85,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+Traceback (most recent call last):
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 88, in wrapper
+    return handler_func(*args, **kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\handlers.py", line 885, in assemble_dotnet
+    assemble_artifacts(bundle_name=bundle_name,
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                       project_path=project_path,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       runtime=RUNTIME_DOTNET)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\artifact_processor.py", line 73, in assemble_artifacts
+    assemble_func(project_path=project_path,
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  bundles_dir=bundle_dir,
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+                  errors_allowed=errors_allowed,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  skip_tests=skip_tests)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 97, in assemble_dotnet_lambdas
+    if future.result():
+       ~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\helper.py", line 72, in wrapper
+    return handler_func(**parameters)
+  File "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\Lib\site-packages\syndicate\core\build\runtime\dotnet.py", line 141, in _build_dotnet_lambda_artifact
+    raise ArtifactAssemblingError(
+    ...<2 lines>...
+    )
+syndicate.exceptions.ArtifactAssemblingError: An error occurred during lambda 'api_handler' packaging. Details:
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 341 ms).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1513: } expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1026: ) expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,61): error CS1002: ; expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1031: Type expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1514: { expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,67): error CS1055: An add or remove accessor expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,69): error CS1055: An add or remove accessor expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(65,79): error CS1519: Invalid token ')' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(66,13): error CS1519: Invalid token '=' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(66,46): error CS1519: Invalid token '{' in class, record, struct, or interface member declaration [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(67,4): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(67,5): error CS8803: Top-level statements must precede namespace and type declarations. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(68,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,20): error CS1026: ) expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,20): error CS1002: ; expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,22): error CS1001: Identifier expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(69,22): error CS1003: Syntax error, ',' expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(77,3): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(78,2): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(85,1): error CS1022: Type or namespace definition, or end-of-file expected [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+
+
+2025-04-01 22:23:12,871 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:03.786067
+2025-04-01 22:23:20,844 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 22:23:21,137 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 22:23:22,345 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 22:23:22,345 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 22:23:22,925 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 22:23:24,837 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 22:23:24,838 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 22:23:24,839 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.001513
+2025-04-01 22:23:24,924 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.222322
+2025-04-01 22:23:24,925 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 22:23:24,925 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 22:23:24,925 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 22:23:24,925 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 22:23:24,926 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 22:23:24,926 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 22:23:24,926 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 22:23:25,021 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 22:23:25,451 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 22:23:25,453 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 22:23:27,962 [INFO] USER:sofia dotnet.py:145:_build_dotnet_lambda_artifact LOG: Running the command "['dotnet', 'publish', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler', '-p:GenerateRuntimeConfigurationFiles=true', '--configuration', 'Release', '--framework', 'net8.0', '--runtime', 'linux-x64', '--self-contained', 'False', '--output', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\.syndicate-config-dev/bundles/task05_250401.222322/dotnet_tmp/lambda/api_handler']"
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(83,17): warning CS8618: Non-nullable property 'Event' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\bin\Release\net8.0\linux-x64\SimpleLambdaFunction.dll
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev\bundles\task05_250401.222322\dotnet_tmp\lambda\api_handler\
+
+
+2025-04-01 22:23:28,400 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/bin"
+2025-04-01 22:23:28,404 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/obj"
+2025-04-01 22:23:28,418 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.222322/dotnet_tmp"
+2025-04-01 22:23:28,426 [INFO] USER:sofia handlers.py:888:assemble_dotnet LOG: DotNet artifacts were prepared successfully.
+2025-04-01 22:23:28,426 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:03.405078
+2025-04-01 22:23:28,670 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble, elapsed time: 0:00:03.745894
+2025-04-01 22:23:28,897 [INFO] USER:sofia handlers.py:1047:package_meta LOG: Package meta, bundle: task05_250401.222322
+2025-04-01 22:23:28,898 [INFO] USER:sofia meta_processor.py:526:create_meta LOG: Bundle path: C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05/bundles/task05_250401.222322
+2025-04-01 22:23:28,911 [INFO] USER:sofia helper.py:306:write_content_to_file LOG: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.222322\build_meta.json file was created.
+2025-04-01 22:23:28,911 [INFO] USER:sofia handlers.py:1050:package_meta LOG: Meta was configured successfully.
+2025-04-01 22:23:28,912 [INFO] USER:sofia helper.py:347:timed LOG: Stage package_meta, elapsed time: 0:00:00.014859
+2025-04-01 22:23:29,316 [INFO] USER:sofia handlers.py:1095:upload LOG: Upload bundle: task05_250401.222322
+2025-04-01 22:23:32,641 [INFO] USER:sofia bundle_processor.py:236:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-04-01 22:23:35,240 [INFO] USER:sofia handlers.py:1102:upload LOG: Bundle was uploaded successfully
+2025-04-01 22:23:35,241 [INFO] USER:sofia helper.py:347:timed LOG: Stage upload, elapsed time: 0:00:06.095600
+2025-04-01 22:23:35,339 [INFO] USER:sofia helper.py:347:timed LOG: Stage build, elapsed time: 0:00:12.412718

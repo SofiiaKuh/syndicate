@@ -45,7 +45,7 @@ public class Function
 				return new APIGatewayProxyResponse
 				{
 					StatusCode = 500,
-					Body = JsonSerializer.Serialize(new { message = "Error writing to DynamoDB" }),
+					Body = JsonSerializer.Serialize(new { statusCode = 201, message = "Error writing to DynamoDB" }),
 					Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
 				};
 			}
@@ -62,7 +62,7 @@ public class Function
 			return new APIGatewayProxyResponse
 			{
 				StatusCode = 201,
-				Body = JsonSerializer.Serialize(new Response(){ StatusCode = 201, Event = response }),
+				Body = JsonSerializer.Serialize(new { statusCode = 201, Event = response }),
 				Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
 			};
 		}

@@ -14,7 +14,7 @@ namespace SimpleLambdaFunction;
 public class Function
 {
 	private static readonly AmazonDynamoDBClient _dynamoDbClient = new AmazonDynamoDBClient();
-	private static readonly string TableName = "Events";
+	private static readonly string TableName = "${target_table}";
 
 	public async Task<APIGatewayProxyResponse> FunctionHandler(APIGatewayProxyRequest request, ILambdaContext context)
 	{

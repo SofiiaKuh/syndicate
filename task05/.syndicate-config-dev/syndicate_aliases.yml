@@ -1,4 +1,5 @@
 account_id: '423623856894'
-lambdas_alias_name: dev
+lambdas_alias_name: learn
+target_table: Events
 logs_expiration: 30
 region: eu-west-1

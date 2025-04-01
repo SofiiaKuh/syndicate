@@ -6,11 +6,69 @@ lambdas:
     runtime: dotnet
 locks:
   modification_lock:
-    last_modification_date: '2025-04-01T18:08:50Z'
-    is_locked: true
+    last_modification_date: '2025-04-01T18:15:48Z'
+    is_locked: false
     initiator: sofia
-    locked_till: '2025-04-01T18:28:50Z'
 events:
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250401.211530
+  deploy_name: task05
+  time_start: '2025-04-01T21:15:42Z'
+  time_end: '2025-04-01T21:15:48Z'
+  duration_sec: 6.41
+  status: succeeded
+  rollback_on_error: false
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250401.211530
+  time_start: '2025-04-01T21:15:30Z'
+  time_end: '2025-04-01T21:15:36Z'
+  duration_sec: 5.93
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250401.211530
+  time_start: '2025-04-01T21:15:35Z'
+  time_end: '2025-04-01T21:15:36Z'
+  duration_sec: 1.842
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250401.211530
+  time_start: '2025-04-01T21:15:34Z'
+  time_end: '2025-04-01T21:15:34Z'
+  duration_sec: 0.026
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250401.211530
+  time_start: '2025-04-01T21:15:31Z'
+  time_end: '2025-04-01T21:15:34Z'
+  duration_sec: 2.833
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250401.211530
+  time_start: '2025-04-01T21:15:32Z'
+  time_end: '2025-04-01T21:15:34Z'
+  duration_sec: 2.667
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-01T21:15:31Z'
+  time_end: '2025-04-01T21:15:31Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250401.210841
+  deploy_name: task05
+  time_start: '2025-04-01T21:08:51Z'
+  time_end: '2025-04-01T21:08:57Z'
+  duration_sec: 6.221
+  status: succeeded
+  rollback_on_error: false
 - operation: build
   initiator: sofia
   bundle_name: task05_250401.210841
@@ -947,9 +1005,9 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250401.210321
+  bundle_name: task05_250401.211530
   deploy_name: task05
-  time_start: '2025-04-01T21:03:34Z'
-  time_end: '2025-04-01T21:03:40Z'
-  duration_sec: 6.621
+  time_start: '2025-04-01T21:15:42Z'
+  time_end: '2025-04-01T21:15:48Z'
+  duration_sec: 6.41
   is_succeeded: true

@@ -6,10 +6,52 @@ lambdas:
     runtime: dotnet
 locks:
   modification_lock:
-    last_modification_date: '2025-04-01T18:15:48Z'
-    is_locked: false
+    last_modification_date: '2025-04-01T18:22:43Z'
+    is_locked: true
     initiator: sofia
+    locked_till: '2025-04-01T18:42:43Z'
 events:
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250401.212224
+  time_start: '2025-04-01T21:22:24Z'
+  time_end: '2025-04-01T21:22:35Z'
+  duration_sec: 10.938
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250401.212224
+  time_start: '2025-04-01T21:22:32Z'
+  time_end: '2025-04-01T21:22:35Z'
+  duration_sec: 3.466
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250401.212224
+  time_start: '2025-04-01T21:22:31Z'
+  time_end: '2025-04-01T21:22:32Z'
+  duration_sec: 0.047
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250401.212224
+  time_start: '2025-04-01T21:22:25Z'
+  time_end: '2025-04-01T21:22:31Z'
+  duration_sec: 6.077
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250401.212224
+  time_start: '2025-04-01T21:22:25Z'
+  time_end: '2025-04-01T21:22:31Z'
+  duration_sec: 5.952
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-01T21:22:25Z'
+  time_end: '2025-04-01T21:22:25Z'
+  duration_sec: 0.002
+  status: succeeded
 - operation: deploy
   initiator: sofia
   bundle_name: task05_250401.211530

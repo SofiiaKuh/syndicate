@@ -9848,3 +9848,47 @@ C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\tas
 2025-04-01 21:15:49,149 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
 2025-04-01 21:15:49,149 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
 2025-04-01 21:15:49,757 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:22:22,408 [INFO] USER:sofia handlers.py:114:syndicate LOG: Configuration used: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev
+2025-04-01 21:22:22,860 [INFO] USER:sofia processor.py:151:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-04-01 21:22:24,270 [INFO] USER:sofia project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-04-01 21:22:24,270 [INFO] USER:sofia project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-04-01 21:22:24,667 [INFO] USER:sofia sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-04-01 21:22:25,747 [INFO] USER:sofia handlers.py:152:test LOG: Running tests...
+2025-04-01 21:22:25,748 [INFO] USER:sofia handlers.py:160:test LOG: Tests not found, 'tests' folder is missing in 'C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05'.
+2025-04-01 21:22:25,749 [INFO] USER:sofia helper.py:347:timed LOG: Stage test, elapsed time: 0:00:00.001567
+2025-04-01 21:22:25,812 [INFO] USER:sofia handlers.py:1003:assemble LOG: Building artifacts, bundle: task05_250401.212224
+2025-04-01 21:22:25,813 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\jsrc\main\java\com\task05.
+2025-04-01 21:22:25,816 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\src\lambdas.
+2025-04-01 21:22:25,816 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\app\lambdas.
+2025-04-01 21:22:25,817 [INFO] USER:sofia project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas.
+2025-04-01 21:22:25,817 [INFO] USER:sofia project_state.py:400:_update_lambdas_from_path LOG: Going to add the following 'dotnet' lambda:'api_handler' to the pending ProjectState.
+2025-04-01 21:22:25,817 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\swagger_src.
+2025-04-01 21:22:25,818 [INFO] USER:sofia project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\appsync_src.
+2025-04-01 21:22:25,868 [INFO] USER:sofia handlers.py:879:assemble_dotnet LOG: Command assemble dotnet: project_path: dnapp 
+2025-04-01 21:22:26,545 [INFO] USER:sofia dotnet.py:66:assemble_dotnet_lambdas LOG: Going to package lambdas starting by path C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp
+2025-04-01 21:22:26,565 [INFO] USER:sofia dotnet.py:88:assemble_dotnet_lambdas LOG: Going to build artifact in: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler
+2025-04-01 21:22:31,464 [INFO] USER:sofia dotnet.py:145:_build_dotnet_lambda_artifact LOG: Running the command "['dotnet', 'publish', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\dnapp\\lambdas\\api_handler', '-p:GenerateRuntimeConfigurationFiles=true', '--configuration', 'Release', '--framework', 'net8.0', '--runtime', 'linux-x64', '--self-contained', 'False', '--output', 'C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task05\\.syndicate-config-dev/bundles/task05_250401.212224/dotnet_tmp/lambda/api_handler']"
+  Determining projects to restore...
+  Restored C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj (in 1.71 sec).
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(25,22): warning CS8602: Dereference of a possibly null reference. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.cs(83,17): warning CS8618: Non-nullable property 'Event' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\Function.csproj]
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler\bin\Release\net8.0\linux-x64\SimpleLambdaFunction.dll
+  Function -> C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev\bundles\task05_250401.212224\dotnet_tmp\lambda\api_handler\
+
+
+2025-04-01 21:22:31,804 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/bin"
+2025-04-01 21:22:31,807 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\dnapp\lambdas\api_handler/obj"
+2025-04-01 21:22:31,814 [INFO] USER:sofia helper.py:92:remove_dir LOG: Trying to remove "C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.212224/dotnet_tmp"
+2025-04-01 21:22:31,819 [INFO] USER:sofia handlers.py:888:assemble_dotnet LOG: DotNet artifacts were prepared successfully.
+2025-04-01 21:22:31,819 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble_dotnet, elapsed time: 0:00:05.951793
+2025-04-01 21:22:31,890 [INFO] USER:sofia helper.py:347:timed LOG: Stage assemble, elapsed time: 0:00:06.077201
+2025-04-01 21:22:31,972 [INFO] USER:sofia handlers.py:1047:package_meta LOG: Package meta, bundle: task05_250401.212224
+2025-04-01 21:22:31,973 [INFO] USER:sofia meta_processor.py:526:create_meta LOG: Bundle path: C:/Users/sofia/OneDrive/Desktop/AWS/Syndicate/syndicate_venv/tasks/syndicate/task05/bundles/task05_250401.212224
+2025-04-01 21:22:32,019 [INFO] USER:sofia helper.py:306:write_content_to_file LOG: C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task05\.syndicate-config-dev/bundles/task05_250401.212224\build_meta.json file was created.
+2025-04-01 21:22:32,019 [INFO] USER:sofia handlers.py:1050:package_meta LOG: Meta was configured successfully.
+2025-04-01 21:22:32,020 [INFO] USER:sofia helper.py:347:timed LOG: Stage package_meta, elapsed time: 0:00:00.047459
+2025-04-01 21:22:32,931 [INFO] USER:sofia handlers.py:1095:upload LOG: Upload bundle: task05_250401.212224
+2025-04-01 21:22:33,746 [INFO] USER:sofia bundle_processor.py:236:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-04-01 21:22:35,553 [INFO] USER:sofia handlers.py:1102:upload LOG: Bundle was uploaded successfully
+2025-04-01 21:22:35,554 [INFO] USER:sofia helper.py:347:timed LOG: Stage upload, elapsed time: 0:00:03.466163
+2025-04-01 21:22:35,624 [INFO] USER:sofia helper.py:347:timed LOG: Stage build, elapsed time: 0:00:10.937538

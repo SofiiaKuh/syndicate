@@ -38,6 +38,18 @@ public class Function
 			var table = Table.LoadTable(_dynamoDbClient, TableName);
 			await table.PutItemAsync(item);
 
+			var savedItem = await table.GetItemAsync(eventId);
+			if (savedItem == null)
+			{
+				context.Logger.LogError("Failed to write item to DynamoDB.");
+				return new APIGatewayProxyResponse
+				{
+					StatusCode = 500,
+					Body = JsonSerializer.Serialize(new { message = "Error writing to DynamoDB" }),
+					Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
+				};
+			}
+
 			var response = new
 			{
 				id = eventId,

@@ -25,14 +25,14 @@ public class Function
 			var principalId = requestBody["principalId"];
 			var createdAt = DateTime.UtcNow.ToString("o");
 
-			var content = JsonSerializer.Serialize(requestBody["content"]);
+			var body = requestBody.ContainsKey("body") ? requestBody["body"] : new Dictionary<string, object> { { "key", "value" } };
 
 			var item = new Document
 			{
 				["id"] = eventId,
 				["principalId"] = principalId.ToString(),
 				["createdAt"] = createdAt,
-				["body"] = new Primitive(content)
+				["body"] = Document.FromJson(JsonSerializer.Serialize(body))
 			};
 
 			var table = Table.LoadTable(_dynamoDbClient, TableName);
@@ -43,13 +43,14 @@ public class Function
 				id = eventId,
 				principalId,
 				createdAt,
-				body = requestBody["content"]
+				body
 			};
 
 			return new APIGatewayProxyResponse
 			{
 				StatusCode = 201,
 				Body = JsonSerializer.Serialize(new { statusCode = 201, @event = response }),
+				Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
 			};
 		}
 		catch (Exception ex)

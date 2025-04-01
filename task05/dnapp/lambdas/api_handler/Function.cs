@@ -17,7 +17,7 @@ public class Function
 	private static readonly string TableName = "Events";
 
 	public async Task<APIGatewayProxyResponse> FunctionHandler(APIGatewayProxyRequest request, ILambdaContext context)
-    {
+	{
 		try
 		{
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, object>>(request.Body);

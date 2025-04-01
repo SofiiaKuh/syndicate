@@ -34,7 +34,6 @@
         "POST": {
           "authorization_type": "NONE",
           "integration_type": "lambda",
-          "lambda_name": "arn:aws:lambda:eu-west-1:ASIAWFIPTCL7FEWQGRYV:function:api_handler:LATEST",
           "api_key_required": false,
           "method_request_parameters": {},
           "integration_request_body_template": {},

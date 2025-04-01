@@ -6,10 +6,60 @@ lambdas:
     runtime: dotnet
 locks:
   modification_lock:
-    last_modification_date: '2025-04-01T15:23:26Z'
+    last_modification_date: '2025-04-01T15:54:05Z'
     is_locked: false
     initiator: sofia
 events:
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250401.185340
+  deploy_name: task05
+  time_start: '2025-04-01T18:53:59Z'
+  time_end: '2025-04-01T18:54:05Z'
+  duration_sec: 6.128
+  status: succeeded
+  rollback_on_error: false
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250401.185340
+  time_start: '2025-04-01T18:53:40Z'
+  time_end: '2025-04-01T18:53:52Z'
+  duration_sec: 11.937
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250401.185340
+  time_start: '2025-04-01T18:53:49Z'
+  time_end: '2025-04-01T18:53:52Z'
+  duration_sec: 3.025
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250401.185340
+  time_start: '2025-04-01T18:53:49Z'
+  time_end: '2025-04-01T18:53:49Z'
+  duration_sec: 0.018
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250401.185340
+  time_start: '2025-04-01T18:53:41Z'
+  time_end: '2025-04-01T18:53:49Z'
+  duration_sec: 7.899
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250401.185340
+  time_start: '2025-04-01T18:53:41Z'
+  time_end: '2025-04-01T18:53:49Z'
+  duration_sec: 7.837
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-01T18:53:41Z'
+  time_end: '2025-04-01T18:53:41Z'
+  duration_sec: 0.001
+  status: succeeded
 - operation: deploy
   initiator: sofia
   bundle_name: task05_250401.182237
@@ -225,9 +275,9 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250401.182237
+  bundle_name: task05_250401.185340
   deploy_name: task05
-  time_start: '2025-04-01T18:23:15Z'
-  time_end: '2025-04-01T18:23:26Z'
-  duration_sec: 11.339
+  time_start: '2025-04-01T18:53:59Z'
+  time_end: '2025-04-01T18:54:05Z'
+  duration_sec: 6.128
   is_succeeded: true

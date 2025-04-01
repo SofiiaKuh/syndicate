@@ -31,13 +31,11 @@
     "dependencies": [],
     "resources": {
       "/events": {
-        "methods": {
           "POST": {
             "integration": {
               "type": "lambda",
               "lambda_name": "api_handler"
             }
-          }
         }
       }
     },

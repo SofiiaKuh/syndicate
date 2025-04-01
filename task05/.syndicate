@@ -6,11 +6,61 @@ lambdas:
     runtime: dotnet
 locks:
   modification_lock:
-    last_modification_date: '2025-04-01T17:26:31Z'
+    last_modification_date: '2025-04-01T17:36:20Z'
     is_locked: true
     initiator: sofia
-    locked_till: '2025-04-01T17:46:31Z'
+    locked_till: '2025-04-01T17:56:20Z'
 events:
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250401.203601
+  time_start: '2025-04-01T20:36:01Z'
+  time_end: '2025-04-01T20:36:08Z'
+  duration_sec: 6.686
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250401.203601
+  time_start: '2025-04-01T20:36:06Z'
+  time_end: '2025-04-01T20:36:08Z'
+  duration_sec: 1.958
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250401.203601
+  time_start: '2025-04-01T20:36:06Z'
+  time_end: '2025-04-01T20:36:06Z'
+  duration_sec: 0.02
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250401.203601
+  time_start: '2025-04-01T20:36:02Z'
+  time_end: '2025-04-01T20:36:06Z'
+  duration_sec: 3.634
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250401.203601
+  time_start: '2025-04-01T20:36:02Z'
+  time_end: '2025-04-01T20:36:06Z'
+  duration_sec: 3.561
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-01T20:36:02Z'
+  time_end: '2025-04-01T20:36:02Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250401.202619
+  deploy_name: task05
+  time_start: '2025-04-01T20:26:31Z'
+  time_end: '2025-04-01T20:26:37Z'
+  duration_sec: 5.963
+  status: succeeded
+  rollback_on_error: false
 - operation: build
   initiator: sofia
   bundle_name: task05_250401.202619
@@ -697,9 +747,9 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250401.201859
+  bundle_name: task05_250401.202619
   deploy_name: task05
-  time_start: '2025-04-01T20:19:17Z'
-  time_end: '2025-04-01T20:19:23Z'
-  duration_sec: 5.949
+  time_start: '2025-04-01T20:26:31Z'
+  time_end: '2025-04-01T20:26:37Z'
+  duration_sec: 5.963
   is_succeeded: true

@@ -28,8 +28,6 @@ public class Function
 			var table = Table.LoadTable(client, tableName);
 			context.Logger.LogLine($"Found table: {tableName}");
 
-			var requestBodyDb = JsonSerializer.Deserialize<RequestBody>(request.Body);
-
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
 			var principalId = requestBody.ContainsKey("principalId") ? requestBody["principalId"].GetInt32() : 10;
@@ -57,9 +55,9 @@ public class Function
 			//var table = Table.LoadTable(_dynamoDbClient, tableName);
 			//await table.PutItemAsync(doc);
 			var bodyAttributes = new Dictionary<string, AttributeValue>();
-
+			var contentdic = JsonSerializer.Deserialize<Dictionary<string, string>>(content);
 			// Loop through the content and dynamically add it to the bodyAttributes
-			foreach (var property in requestBodyDb.Content)
+			foreach (var property in contentdic)
 			{
 				bodyAttributes.Add(property.Key, new AttributeValue { S = property.Value });
 			}
@@ -73,7 +71,7 @@ public class Function
 						M = new Dictionary<string, AttributeValue>
 						{
 							{ "id", new AttributeValue { S = eventId } },
-							{ "principalId", new AttributeValue { N = requestBodyDb.PrincipalId.ToString() } },
+							{ "principalId", new AttributeValue { N = principalId.ToString() } },
 							{ "createdAt", new AttributeValue { S = createdAt } },
 							{ "body", new AttributeValue
 								{

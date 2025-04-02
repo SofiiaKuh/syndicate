@@ -20,7 +20,7 @@ public class Function
 	{
 		try
 		{
-			string tableName = await GetTableNameAsync();
+			var tableName = Environment.GetEnvironmentVariable("table_name");
 			context.Logger.LogLine($"Found table: {tableName}");
 
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, object>>(request.Body);

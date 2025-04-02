@@ -29,18 +29,21 @@ public class Function
 			var createdAt = DateTime.UtcNow.ToString("o");
 
 			var bodyJson = requestBody.ContainsKey("body") ? requestBody["body"].GetRawText() : "{}";
+			
+			var eventData = new
+			{
+				id = eventId,
+				principalId,
+				createdAt,
+				body = requestBody.ContainsKey("body") ? requestBody["body"].GetRawText() : "{}"
+			};
 
 			var item = new Document
 			{
 				["id"] = eventId,
-				["event"] = Document.FromJson(JsonSerializer.Serialize(new
-				{
-					id = eventId,
-					principalId,
-					createdAt,
-					body = bodyJson
-				}))
+				["event"] = Document.FromJson(JsonSerializer.Serialize(eventData))
 			};
+			context.Logger.LogLine($"Item is going to put: {JsonSerializer.Serialize(item)}");
 
 			var table = Table.LoadTable(_dynamoDbClient, tableName);
 			await table.PutItemAsync(item);
@@ -56,7 +59,7 @@ public class Function
 					Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
 				};
 			}
-			context.Logger.LogLine($"Item put: {savedItem}");
+			context.Logger.LogLine($"Item put: {JsonSerializer.Serialize(savedItem)}");
 
 			var response = new
 			{
@@ -91,16 +94,5 @@ public class Function
 		public int StatusCode { get; set; }
 		public object? Event { get; set; }
 	}
-	private static async Task<string> GetTableNameAsync()
-	{
-		using var dynamoDbClient = new AmazonDynamoDBClient();
 
-		var response = await dynamoDbClient.ListTablesAsync();
-
-		// Find the table containing "Events"
-		var tableName = response.TableNames.FirstOrDefault(t => t.Contains("Events"));
-
-
-		return tableName;
-	}
 }

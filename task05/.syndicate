@@ -1,11 +1,19 @@
 name: task05
 locks:
   modification_lock:
-    last_modification_date: '2025-04-02T09:18:49Z'
-    is_locked: true
+    last_modification_date: '2025-04-02T09:18:56Z'
+    is_locked: false
     initiator: sofia
-    locked_till: '2025-04-02T09:38:49Z'
 events:
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250402.121837
+  deploy_name: task05
+  time_start: '2025-04-02T12:18:50Z'
+  time_end: '2025-04-02T12:18:56Z'
+  duration_sec: 6.436
+  status: succeeded
+  rollback_on_error: false
 - operation: build
   initiator: sofia
   bundle_name: task05_250402.121837
@@ -2174,11 +2182,11 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250402.121409
+  bundle_name: task05_250402.121837
   deploy_name: task05
-  time_start: '2025-04-02T12:14:23Z'
-  time_end: '2025-04-02T12:14:30Z'
-  duration_sec: 6.205
+  time_start: '2025-04-02T12:18:50Z'
+  time_end: '2025-04-02T12:18:56Z'
+  duration_sec: 6.436
   is_succeeded: true
 build_projects_mapping:
   dotnet: dnapp

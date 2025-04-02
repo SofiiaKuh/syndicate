@@ -35,23 +35,23 @@ public class Function
 
 			var content = requestBody["content"].GetRawText();
 
-			var scanRequest = new ScanRequest { TableName = tableName };
-			var scanResponse = await client.ScanAsync(scanRequest);
+		//	var scanRequest = new ScanRequest { TableName = tableName };
+		//	var scanResponse = await client.ScanAsync(scanRequest);
 
-			// 2. Batch delete records
-			foreach (var eeetem in scanResponse.Items)
-			{
-				var deleteRequest = new DeleteItemRequest
-				{
-					TableName = tableName,
-					Key = new Dictionary<string, AttributeValue>
-		{
-			{ "id", eeetem["id"] }  // Use your table's primary key
-        }
-				};
+		//	2.Batch delete records
+		//	foreach (var eeetem in scanResponse.Items)
+		//	{
+		//		var deleteRequest = new DeleteItemRequest
+		//		{
+		//			TableName = tableName,
+		//			Key = new Dictionary<string, AttributeValue>
+		//{
+		//	{ "id", eeetem["id"] }  // Use your table's primary key
+  //      }
+		//		};
 
-				await client.DeleteItemAsync(deleteRequest);
-			}
+		//		await client.DeleteItemAsync(deleteRequest);
+		//	}
 
 			//var eventData = new EventResponse
 			//{
@@ -75,33 +75,37 @@ public class Function
 			var bodyAttributes = new Dictionary<string, AttributeValue>();
 			var contentdic = JsonSerializer.Deserialize<Dictionary<string, string>>(content);
 			// Loop through the content and dynamically add it to the bodyAttributes
-			//foreach (var property in contentdic)
-			//{
-			//	bodyAttributes.Add(property.Key, new AttributeValue { S = property.Value });
-			//}
+			foreach (var property in contentdic)
+			{
+				bodyAttributes.Add(property.Key, new AttributeValue { S = property.Value });
+			}
 
 			// Create the item to be added
 			var item = new Dictionary<string, AttributeValue>
 			{
 				{ "id", new AttributeValue { S = eventId } },  
-     //           { "event", new AttributeValue
-					//{
-					//	M = new Dictionary<string, AttributeValue>
-						//{
+                { "event", new AttributeValue
+					{
+						M = new Dictionary<string, AttributeValue>
+						{
 							{ "id", new AttributeValue { S = eventId } },
-							{ "principalId", new AttributeValue { N = "10" } },
-							{ "createdAt", new AttributeValue { S = "2024-01-01T00:00:00.000000" } },
+							{ "principalId", new AttributeValue { N = principalId.ToString() } },
+							{ "createdAt", new AttributeValue { S = createdAt } },
 							{ "body", new AttributeValue
 								{
-									M = new Dictionary<string, AttributeValue>
-									{
-									{ "key", new AttributeValue { S = "value" } }
-									}
+									M = bodyAttributes
 								}
 							}
-				//		}
-				//	}
-				//}
+						}
+					}
+				},
+				{ "principalId", new AttributeValue { N = principalId.ToString() } },
+				{ "createdAt", new AttributeValue { S = createdAt } },
+				{ "body", new AttributeValue
+					{
+						M = bodyAttributes
+					}
+				}
 			};
 
 			context.Logger.LogLine($"Item to put: {JsonSerializer.Serialize(item)}");

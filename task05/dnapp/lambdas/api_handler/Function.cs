@@ -21,6 +21,7 @@ public class Function
 		try
 		{
 			string tableName = await GetTableNameAsync();
+			context.Logger.LogLine($"Found table: {tableName}");
 
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, object>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
@@ -63,6 +64,7 @@ public class Function
 				createdAt,
 				body
 			};
+			context.Logger.LogLine($"Create response {response}");
 
 
 			return new APIGatewayProxyResponse
@@ -97,10 +99,6 @@ public class Function
 		// Find the table containing "Events"
 		var tableName = response.TableNames.FirstOrDefault(t => t.Contains("Events"));
 
-		if (tableName == null)
-		{
-			throw new Exception("No table containing 'Events' found in DynamoDB.");
-		}
 
 		return tableName;
 	}

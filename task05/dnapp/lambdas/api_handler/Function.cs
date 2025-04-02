@@ -6,6 +6,7 @@ using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using System.Linq;
+using Amazon.DynamoDBv2.Model;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
@@ -21,8 +22,13 @@ public class Function
 	{
 		try
 		{
+			var client = new AmazonDynamoDBClient();
+
 			var tableName = Environment.GetEnvironmentVariable("table_name");
+			var table = Table.LoadTable(client, tableName);
 			context.Logger.LogLine($"Found table: {tableName}");
+
+			var requestBodyDb = JsonSerializer.Deserialize<RequestBody>(request.Body);
 
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
@@ -31,26 +37,62 @@ public class Function
 
 			var content = requestBody.ContainsKey("content") ? requestBody["content"].GetRawText() : "{}";
 
-			var eventData = new EventResponse
+			//var eventData = new EventResponse
+			//{
+			//	id = eventId,
+			//	principalId = principalId,
+			//	createdAt = createdAt,
+			//	body = JsonSerializer.Deserialize<Dictionary<string, string>>(content)  // Deserialize body as a map
+			//};
+
+			//var item = new Dbdata
+			//{
+			//	id = eventId,
+			//	Event = eventData
+			//};
+
+			//var doc = Document.FromJson(JsonSerializer.Serialize(item));
+			//context.Logger.LogLine($"Serialized item: {JsonSerializer.Serialize(item)}");
+
+			//var table = Table.LoadTable(_dynamoDbClient, tableName);
+			//await table.PutItemAsync(doc);
+			var bodyAttributes = new Dictionary<string, AttributeValue>();
+
+			// Loop through the content and dynamically add it to the bodyAttributes
+			foreach (var property in requestBodyDb.Content)
 			{
-				id = eventId,
-				principalId = principalId,
-				createdAt = createdAt,
-				body = JsonSerializer.Deserialize<Dictionary<string, string>>(content)  // Deserialize body as a map
+				bodyAttributes.Add(property.Key, new AttributeValue { S = property.Value });
+			}
+
+			// Create the item to be added
+			var item = new Dictionary<string, AttributeValue>
+			{
+				{ "id", new AttributeValue { N = "201" } },  // Example ID, adjust as necessary
+                { "event", new AttributeValue
+					{
+						M = new Dictionary<string, AttributeValue>
+						{
+							{ "id", new AttributeValue { S = eventId } },
+							{ "principalId", new AttributeValue { N = requestBodyDb.PrincipalId.ToString() } },
+							{ "createdAt", new AttributeValue { S = createdAt } },
+							{ "body", new AttributeValue
+								{
+									M = bodyAttributes
+								}
+							}
+						}
+					}
+				}
 			};
 
-			var item = new Dbdata
+
+			var vrequest = new PutItemRequest
 			{
-				id = eventId,
-				Event = eventData
+				TableName = tableName,
+				Item = item
 			};
 
-			var doc = Document.FromJson(JsonSerializer.Serialize(item));
-
-			context.Logger.LogLine($"Item is going to put: {JsonSerializer.Serialize(doc)}");
-
-			var table = Table.LoadTable(_dynamoDbClient, tableName);
-			await table.PutItemAsync(doc);
+			client.PutItemAsync(vrequest);
 
 			var savedItem = await table.GetItemAsync(eventId);
 			if (savedItem == null)
@@ -115,4 +157,11 @@ public class Function
 		public EventResponse Event { get; set; }
 
 	}
+
+	public class RequestBody
+	{
+		public int PrincipalId { get; set; }
+		public Dictionary<string, string> Content { get; set; } // Content as a dictionary of key-value pairs
+	}
 }
+	

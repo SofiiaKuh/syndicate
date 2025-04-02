@@ -31,7 +31,7 @@ public class Function
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
 			var principalId = requestBody.ContainsKey("principalId") ? requestBody["principalId"].GetInt32() : 10;
-			var createdAt = DateTime.UtcNow.ToString("o");
+			var createdAt = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.ffffffZ");
 
 			var content = requestBody["content"].GetRawText();
 

@@ -25,6 +25,16 @@
     "resource_type": "iam_policy",
     "tags": {}
   },
+  "${target_table}": {
+    "resource_type": "dynamodb_table",
+    "hash_key_name": "id",
+    "hash_key_type": "S",
+    "read_capacity": 1,
+    "write_capacity": 1,
+    "global_indexes": [],
+    "autoscaling": [],
+    "tags": {}
+  },
   "task5_api": {
     "resource_type": "api_gateway",
     "deploy_stage": "api",
@@ -33,6 +43,7 @@
       "/events": {
         "enable_cors": false,
         "POST": {
+          "enable_proxy": true,
           "authorization_type": "NONE",
           "integration_type": "lambda",
           "lambda_name": "api_handler",
@@ -45,16 +56,6 @@
         }
       }
     },
-    "tags": {}
-  },
-  "Events": {
-    "resource_type": "dynamodb_table",
-    "hash_key_name": "id",
-    "hash_key_type": "S",
-    "read_capacity": 1,
-    "write_capacity": 1,
-    "global_indexes": [],
-    "autoscaling": [],
     "tags": {}
   }
 }

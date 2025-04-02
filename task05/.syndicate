@@ -1,15 +1,82 @@
 name: task05
-build_projects_mapping:
-  dotnet: dnapp
-lambdas:
-  api_handler:
-    runtime: dotnet
 locks:
   modification_lock:
-    last_modification_date: '2025-04-01T19:16:15Z'
+    last_modification_date: '2025-04-02T08:02:19Z'
     is_locked: false
     initiator: sofia
 events:
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250402.110148
+  deploy_name: task05
+  time_start: '2025-04-02T11:02:12Z'
+  time_end: '2025-04-02T11:02:19Z'
+  duration_sec: 7.3
+  status: succeeded
+  rollback_on_error: false
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250402.110148
+  time_start: '2025-04-02T11:01:48Z'
+  time_end: '2025-04-02T11:01:56Z'
+  duration_sec: 8.09
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250402.110148
+  time_start: '2025-04-02T11:01:54Z'
+  time_end: '2025-04-02T11:01:56Z'
+  duration_sec: 2.051
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250402.110148
+  time_start: '2025-04-02T11:01:53Z'
+  time_end: '2025-04-02T11:01:53Z'
+  duration_sec: 0.024
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250402.110148
+  time_start: '2025-04-02T11:01:49Z'
+  time_end: '2025-04-02T11:01:53Z'
+  duration_sec: 4.405
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250402.110148
+  time_start: '2025-04-02T11:01:49Z'
+  time_end: '2025-04-02T11:01:53Z'
+  duration_sec: 4.163
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-02T11:01:49Z'
+  time_end: '2025-04-02T11:01:49Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250402.110043
+  time_start: '2025-04-02T11:00:44Z'
+  time_end: '2025-04-02T11:00:54Z'
+  duration_sec: 9.806
+  status: failed
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-02T11:00:44Z'
+  time_end: '2025-04-02T11:00:44Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250401.222322
+  deploy_name: task05
+  time_start: '2025-04-01T22:23:48Z'
+  time_end: '2025-04-01T22:25:57Z'
+  duration_sec: 129.6
+  status: failed
+  rollback_on_error: false
 - operation: build
   initiator: sofia
   bundle_name: task05_250401.222322
@@ -1459,9 +1526,14 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250401.221538
+  bundle_name: task05_250402.110148
   deploy_name: task05
-  time_start: '2025-04-01T22:16:03Z'
-  time_end: '2025-04-01T22:16:15Z'
-  duration_sec: 11.859
+  time_start: '2025-04-02T11:02:12Z'
+  time_end: '2025-04-02T11:02:19Z'
+  duration_sec: 7.3
   is_succeeded: true
+build_projects_mapping:
+  dotnet: dnapp
+lambdas:
+  api_handler:
+    runtime: dotnet

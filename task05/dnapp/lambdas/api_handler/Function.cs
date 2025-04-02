@@ -65,7 +65,7 @@ public class Function
 			// Create the item to be added
 			var item = new Dictionary<string, AttributeValue>
 			{
-				{ "id", new AttributeValue { N = "201" } },  // Example ID, adjust as necessary
+				{ "id", new AttributeValue { S = eventId } },  // Example ID, adjust as necessary
                 { "event", new AttributeValue
 					{
 						M = new Dictionary<string, AttributeValue>

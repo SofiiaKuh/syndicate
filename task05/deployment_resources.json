@@ -16,7 +16,8 @@
             "ssm:GetParameter",
             "kms:Decrypt",
             "dynamodb:ListTables",
-            "dynamodb:DescribeTable"
+            "dynamodb:DescribeTable",
+            "dynamodb:Scan"
           ],
           "Effect": "Allow",
           "Resource": "*"

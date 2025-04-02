@@ -39,14 +39,14 @@ public class Function
 		{
 			["id"] = new AttributeValue { S = Guid.NewGuid().ToString() },
 			["itemKey"] = new AttributeValue { S = newImage["key"].S },
-			["modificationTime"] = new AttributeValue { S = DateTime.UtcNow.ToString("o") },
+			["modificationTime"] = new AttributeValue { S = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.ffffffZ") },
 			["newValue"] = new AttributeValue
 			{
-				S = JsonSerializer.Serialize(new
+				M = new Dictionary<string, AttributeValue>
 				{
-					key = newImage["key"].S,
-					value = int.Parse(newImage["value"].N)
-				})
+					{ "key", new AttributeValue { S = newImage["key"].S } },
+					{ "value", new AttributeValue { N = int.Parse(newImage["value"].N).ToString() } }
+				}
 			}
 		};
 
@@ -63,7 +63,7 @@ public class Function
 		{
 			["id"] = new AttributeValue { S = Guid.NewGuid().ToString() },
 			["itemKey"] = new AttributeValue { S = newImage["key"].S },
-			["modificationTime"] = new AttributeValue { S = DateTime.UtcNow.ToString("o") },
+			["modificationTime"] = new AttributeValue { S = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.ffffffZ") },
 			["updatedAttribute"] = new AttributeValue { S = updatedAttribute },
 			["oldValue"] = new AttributeValue { N = oldValue.ToString() },
 			["newValue"] = new AttributeValue { N = newValue.ToString() }

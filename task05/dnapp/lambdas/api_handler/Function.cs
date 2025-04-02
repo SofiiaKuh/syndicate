@@ -6,6 +6,8 @@ using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using System.Threading.Tasks;
+using Amazon.SimpleSystemsManagement;
+using Amazon.SimpleSystemsManagement.Model;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
@@ -14,12 +16,13 @@ namespace SimpleLambdaFunction;
 public class Function
 {
 	private static readonly AmazonDynamoDBClient _dynamoDbClient = new AmazonDynamoDBClient();
-	private static readonly string TableName = "Events";
 
 	public async Task<APIGatewayProxyResponse> FunctionHandler(APIGatewayProxyRequest request, ILambdaContext context)
 	{
 		try
 		{
+			string tableName = await GetTableNameAsync();
+
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, object>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
 			var principalId = requestBody["principalId"];
@@ -35,7 +38,7 @@ public class Function
 				["body"] = Document.FromJson(JsonSerializer.Serialize(body))
 			};
 
-			var table = Table.LoadTable(_dynamoDbClient, TableName);
+			var table = Table.LoadTable(_dynamoDbClient, tableName);
 			await table.PutItemAsync(item);
 
 			var savedItem = await table.GetItemAsync(eventId);
@@ -81,5 +84,13 @@ public class Function
 	{
 		public int StatusCode { get; set; }
 		public object Event { get; set; }
+	}
+	private static async Task<string> GetTableNameAsync()
+	{
+		using var ssmClient = new AmazonSimpleSystemsManagementClient();
+		var request = new GetParameterRequest { Name = "/learn/target_table" };
+
+		var response = await ssmClient.GetParameterAsync(request);
+		return response.Parameter.Value;
 	}
 }

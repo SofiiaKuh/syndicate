@@ -6,6 +6,7 @@ using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -32,19 +33,20 @@ public class Function
 
 			var eventData = new EventResponse
 			{
-				Id = eventId,
-				PrincipalId = principalId,
-				CreatedAt = createdAt,
-				Body = JsonSerializer.Deserialize<Dictionary<string, string>>(content)  // Deserialize body as a map
+				id = eventId,
+				principalId = principalId,
+				createdAt = createdAt,
+				body = JsonSerializer.Deserialize<Dictionary<string, string>>(content)  // Deserialize body as a map
 			};
 
 			var item = new Dbdata
 			{
-				Id = eventId,
+				id = eventId,
 				Event = eventData
 			};
 
-			var doc = Document.FromJson(JsonSerializer.Serialize(item));
+			var serializedItem = JsonSerializer.Serialize(item);
+			var doc = Document.FromJson(serializedItem);
 
 			context.Logger.LogLine($"Item is going to put: {JsonSerializer.Serialize(doc)}");
 
@@ -100,16 +102,17 @@ public class Function
 
 	public class EventResponse
 	{
-		public string Id { get; set; }
-		public int PrincipalId { get; set; }
-		public string CreatedAt { get; set; }
-		public Dictionary<string, string> Body { get; set; }
+		public string id { get; set; }
+		public int principalId { get; set; }
+		public string createdAt { get; set; }
+		public Dictionary<string, string> body { get; set; }
 	}
 
 	public class Dbdata
 	{
 
-		public string Id { get; set; }
+		public string id { get; set; }
+		[JsonPropertyName("event")]
 		public EventResponse Event { get; set; }
 
 	}

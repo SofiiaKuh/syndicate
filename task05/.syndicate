@@ -1,11 +1,61 @@
 name: task05
 locks:
   modification_lock:
-    last_modification_date: '2025-04-02T10:01:49Z'
+    last_modification_date: '2025-04-02T10:10:42Z'
     is_locked: true
     initiator: sofia
-    locked_till: '2025-04-02T10:21:49Z'
+    locked_till: '2025-04-02T10:30:42Z'
 events:
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250402.131020
+  time_start: '2025-04-02T13:10:20Z'
+  time_end: '2025-04-02T13:10:28Z'
+  duration_sec: 7.854
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250402.131020
+  time_start: '2025-04-02T13:10:26Z'
+  time_end: '2025-04-02T13:10:28Z'
+  duration_sec: 2.184
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250402.131020
+  time_start: '2025-04-02T13:10:26Z'
+  time_end: '2025-04-02T13:10:26Z'
+  duration_sec: 0.013
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250402.131020
+  time_start: '2025-04-02T13:10:21Z'
+  time_end: '2025-04-02T13:10:25Z'
+  duration_sec: 4.17
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250402.131020
+  time_start: '2025-04-02T13:10:21Z'
+  time_end: '2025-04-02T13:10:25Z'
+  duration_sec: 3.833
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-02T13:10:21Z'
+  time_end: '2025-04-02T13:10:21Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: deploy
+  initiator: sofia
+  bundle_name: task05_250402.130135
+  deploy_name: task05
+  time_start: '2025-04-02T13:01:50Z'
+  time_end: '2025-04-02T13:01:58Z'
+  duration_sec: 7.336
+  status: succeeded
+  rollback_on_error: false
 - operation: build
   initiator: sofia
   bundle_name: task05_250402.130135
@@ -2502,11 +2552,11 @@ events:
   status: succeeded
 latest_deploy:
   initiator: sofia
-  bundle_name: task05_250402.124613
+  bundle_name: task05_250402.130135
   deploy_name: task05
-  time_start: '2025-04-02T12:46:42Z'
-  time_end: '2025-04-02T12:46:49Z'
-  duration_sec: 6.401
+  time_start: '2025-04-02T13:01:50Z'
+  time_end: '2025-04-02T13:01:58Z'
+  duration_sec: 7.336
   is_succeeded: true
 build_projects_mapping:
   dotnet: dnapp

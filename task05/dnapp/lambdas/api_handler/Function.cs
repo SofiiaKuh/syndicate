@@ -32,9 +32,13 @@ public class Function
 			var item = new Document
 			{
 				["id"] = eventId,
-				["principalId"] = principalId.ToString(),
-				["createdAt"] = createdAt,
-				["body"] = Document.FromJson(JsonSerializer.Serialize(body))
+				["event"] = Document.FromJson(JsonSerializer.Serialize(new
+				{
+					id = eventId,
+					principalId,
+					createdAt,
+					body
+				}))
 			};
 
 			var table = Table.LoadTable(_dynamoDbClient, tableName);

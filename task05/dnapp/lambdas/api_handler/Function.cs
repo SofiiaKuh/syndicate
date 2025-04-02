@@ -23,13 +23,12 @@ public class Function
 			var tableName = Environment.GetEnvironmentVariable("table_name");
 			context.Logger.LogLine($"Found table: {tableName}");
 
-			var requestBody = JsonSerializer.Deserialize<Dictionary<string, object>>(request.Body);
+			var requestBody = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(request.Body); 
 			var eventId = Guid.NewGuid().ToString();
-			var principalId = Convert.ToInt32(requestBody["principalId"]);
+			var principalId = requestBody["principalId"].GetInt32(); 
 			var createdAt = DateTime.UtcNow.ToString("o");
 
-			var body = requestBody.ContainsKey("body") ? requestBody["body"] : new Dictionary<string, object> { { "key", "value" } };
-			var bodyJson = JsonSerializer.Serialize(body);
+			var bodyJson = requestBody.ContainsKey("body") ? requestBody["body"].GetRawText() : "{}";
 
 			var item = new Document
 			{
@@ -64,7 +63,7 @@ public class Function
 				id = eventId,
 				principalId,
 				createdAt,
-				body
+				bodyJson
 			};
 			context.Logger.LogLine($"Create response {response}");
 
@@ -90,7 +89,7 @@ public class Function
 	class Response
 	{
 		public int StatusCode { get; set; }
-		public object Event { get; set; }
+		public object? Event { get; set; }
 	}
 	private static async Task<string> GetTableNameAsync()
 	{

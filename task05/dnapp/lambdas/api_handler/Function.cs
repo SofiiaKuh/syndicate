@@ -90,7 +90,7 @@ public class Function
 				Item = item
 			};
 
-			client.PutItemAsync(vrequest);
+			await  client.PutItemAsync(vrequest);
 
 			var savedItem = await table.GetItemAsync(eventId);
 			if (savedItem == null)

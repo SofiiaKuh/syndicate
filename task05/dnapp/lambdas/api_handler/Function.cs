@@ -65,7 +65,7 @@ public class Function
 			// Create the item to be added
 			var item = new Dictionary<string, AttributeValue>
 			{
-				{ "id", new AttributeValue { S = eventId } },  // Example ID, adjust as necessary
+				{ "id", new AttributeValue { S = eventId } },  
                 { "event", new AttributeValue
 					{
 						M = new Dictionary<string, AttributeValue>
@@ -82,6 +82,8 @@ public class Function
 					}
 				}
 			};
+
+			context.Logger.LogLine($"Item to put: {JsonSerializer.Serialize(item)}");
 
 
 			var vrequest = new PutItemRequest

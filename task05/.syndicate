@@ -7,6 +7,47 @@ locks:
 events:
 - operation: build
   initiator: sofia
+  bundle_name: task05_250402.124613
+  time_start: '2025-04-02T12:46:13Z'
+  time_end: '2025-04-02T12:46:20Z'
+  duration_sec: 7.059
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250402.124613
+  time_start: '2025-04-02T12:46:18Z'
+  time_end: '2025-04-02T12:46:20Z'
+  duration_sec: 2.149
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250402.124613
+  time_start: '2025-04-02T12:46:18Z'
+  time_end: '2025-04-02T12:46:18Z'
+  duration_sec: 0.008
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250402.124613
+  time_start: '2025-04-02T12:46:14Z'
+  time_end: '2025-04-02T12:46:18Z'
+  duration_sec: 3.518
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250402.124613
+  time_start: '2025-04-02T12:46:14Z'
+  time_end: '2025-04-02T12:46:17Z'
+  duration_sec: 3.287
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-02T12:46:14Z'
+  time_end: '2025-04-02T12:46:14Z'
+  duration_sec: 0.001
+  status: succeeded
+- operation: build
+  initiator: sofia
   bundle_name: task05_250402.124346
   time_start: '2025-04-02T12:43:46Z'
   time_end: '2025-04-02T12:43:55Z'

@@ -5,9 +5,8 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using System.Linq;
 using System.Threading.Tasks;
-using Amazon.SimpleSystemsManagement;
-using Amazon.SimpleSystemsManagement.Model;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
@@ -87,10 +86,18 @@ public class Function
 	}
 	private static async Task<string> GetTableNameAsync()
 	{
-		using var ssmClient = new AmazonSimpleSystemsManagementClient();
-		var request = new GetParameterRequest { Name = "/learn/target_table" };
+		using var dynamoDbClient = new AmazonDynamoDBClient();
 
-		var response = await ssmClient.GetParameterAsync(request);
-		return response.Parameter.Value;
+		var response = await dynamoDbClient.ListTablesAsync();
+
+		// Find the table containing "Events"
+		var tableName = response.TableNames.FirstOrDefault(t => t.Contains("Events"));
+
+		if (tableName == null)
+		{
+			throw new Exception("No table containing 'Events' found in DynamoDB.");
+		}
+
+		return tableName;
 	}
 }

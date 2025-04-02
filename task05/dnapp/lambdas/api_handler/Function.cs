@@ -25,21 +25,18 @@ public class Function
 
 			var requestBody = JsonSerializer.Deserialize<Dictionary<string, object>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
-			var principalId = requestBody["principalId"];
+			var principalId = Convert.ToInt32(requestBody["principalId"]);
 			var createdAt = DateTime.UtcNow.ToString("o");
 
 			var body = requestBody.ContainsKey("body") ? requestBody["body"] : new Dictionary<string, object> { { "key", "value" } };
+			var bodyJson = JsonSerializer.Serialize(body);
 
 			var item = new Document
 			{
-				["id"] = eventId,
-				["event"] = Document.FromJson(JsonSerializer.Serialize(new
-				{
-					id = eventId,
-					principalId,
-					createdAt,
-					body
-				}))
+				["id"] = eventId, 
+				["principalId"] = principalId.ToString(),
+				["createdAt"] = createdAt,
+				["body"] = Document.FromJson(bodyJson)
 			};
 
 			var table = Table.LoadTable(_dynamoDbClient, tableName);
@@ -56,6 +53,7 @@ public class Function
 					Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
 				};
 			}
+			context.Logger.LogLine($"Item put: {savedItem}");
 
 			var response = new
 			{

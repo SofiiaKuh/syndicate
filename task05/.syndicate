@@ -1,10 +1,52 @@
 name: task05
 locks:
   modification_lock:
-    last_modification_date: '2025-04-02T08:37:14Z'
-    is_locked: false
+    last_modification_date: '2025-04-02T08:42:48Z'
+    is_locked: true
     initiator: sofia
+    locked_till: '2025-04-02T09:02:48Z'
 events:
+- operation: build
+  initiator: sofia
+  bundle_name: task05_250402.114233
+  time_start: '2025-04-02T11:42:33Z'
+  time_end: '2025-04-02T11:42:40Z'
+  duration_sec: 6.728
+  status: succeeded
+- operation: upload
+  initiator: sofia
+  bundle_name: task05_250402.114233
+  time_start: '2025-04-02T11:42:37Z'
+  time_end: '2025-04-02T11:42:39Z'
+  duration_sec: 2.143
+  status: succeeded
+- operation: package_meta
+  initiator: sofia
+  bundle_name: task05_250402.114233
+  time_start: '2025-04-02T11:42:37Z'
+  time_end: '2025-04-02T11:42:37Z'
+  duration_sec: 0.015
+  status: succeeded
+- operation: assemble
+  initiator: sofia
+  bundle_name: task05_250402.114233
+  time_start: '2025-04-02T11:42:34Z'
+  time_end: '2025-04-02T11:42:37Z'
+  duration_sec: 3.303
+  status: succeeded
+- operation: assemble_dotnet
+  initiator: sofia
+  bundle_name: task05_250402.114233
+  time_start: '2025-04-02T11:42:34Z'
+  time_end: '2025-04-02T11:42:37Z'
+  duration_sec: 3.027
+  status: succeeded
+- operation: test
+  initiator: sofia
+  time_start: '2025-04-02T11:42:34Z'
+  time_end: '2025-04-02T11:42:34Z'
+  duration_sec: 0.001
+  status: succeeded
 - operation: deploy
   initiator: sofia
   bundle_name: task05_250402.113654

@@ -15,7 +15,8 @@
             "ssm:PutParameter",
             "ssm:GetParameter",
             "kms:Decrypt",
-            "dynamodb:ListTables"
+            "dynamodb:ListTables",
+            "dynamodb:DescribeTable"
           ],
           "Effect": "Allow",
           "Resource": "*"

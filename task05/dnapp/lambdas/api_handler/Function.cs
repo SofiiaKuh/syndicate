@@ -84,10 +84,10 @@ public class Function
 			var item = new Dictionary<string, AttributeValue>
 			{
 				{ "id", new AttributeValue { S = eventId } },  
-                { "event", new AttributeValue
-					{
-						M = new Dictionary<string, AttributeValue>
-						{
+     //           { "event", new AttributeValue
+					//{
+					//	M = new Dictionary<string, AttributeValue>
+						//{
 							{ "id", new AttributeValue { S = eventId } },
 							{ "principalId", new AttributeValue { N = "10" } },
 							{ "createdAt", new AttributeValue { S = "2024-01-01T00:00:00.000000" } },
@@ -99,9 +99,9 @@ public class Function
 									}
 								}
 							}
-						}
-					}
-				}
+				//		}
+				//	}
+				//}
 			};
 
 			context.Logger.LogLine($"Item to put: {JsonSerializer.Serialize(item)}");
@@ -114,19 +114,6 @@ public class Function
 			};
 
 			await  client.PutItemAsync(vrequest);
-
-			var savedItem = await table.GetItemAsync(eventId);
-			if (savedItem == null)
-			{
-				context.Logger.LogError("Failed to write item to DynamoDB.");
-				return new APIGatewayProxyResponse
-				{
-					StatusCode = 500,
-					Body = JsonSerializer.Serialize(new { statusCode = 201, message = "Error writing to DynamoDB" }),
-					Headers = new Dictionary<string, string> { { "Content-Type", "application/json" } }
-				};
-			}
-			context.Logger.LogLine($"Item put: {JsonSerializer.Serialize(savedItem)}");
 
 			var response = new
 			{

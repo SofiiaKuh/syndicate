@@ -45,8 +45,7 @@ public class Function
 				Event = eventData
 			};
 
-			var serializedItem = JsonSerializer.Serialize(item);
-			var doc = Document.FromJson(serializedItem);
+			var doc = Document.FromJson(JsonSerializer.Serialize(item));
 
 			context.Logger.LogLine($"Item is going to put: {JsonSerializer.Serialize(doc)}");
 

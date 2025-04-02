@@ -23,30 +23,33 @@ public class Function
 			var tableName = Environment.GetEnvironmentVariable("table_name");
 			context.Logger.LogLine($"Found table: {tableName}");
 
-			var requestBody = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(request.Body); 
+			var requestBody = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(request.Body);
 			var eventId = Guid.NewGuid().ToString();
-			var principalId = requestBody["principalId"].GetInt32(); 
+			var principalId = requestBody.ContainsKey("principalId") ? requestBody["principalId"].GetInt32() : 10;
 			var createdAt = DateTime.UtcNow.ToString("o");
 
-			var bodyJson = requestBody.ContainsKey("body") ? requestBody["body"].GetRawText() : "{}";
-			
-			var eventData = new
+			var content = requestBody.ContainsKey("content") ? requestBody["content"].GetRawText() : "{}";
+
+			var eventData = new EventResponse
 			{
-				id = eventId,
-				principalId,
-				createdAt,
-				body = requestBody.ContainsKey("body") ? requestBody["body"].GetRawText() : "{}"
+				Id = eventId,
+				PrincipalId = principalId,
+				CreatedAt = createdAt,
+				Body = JsonSerializer.Deserialize<Dictionary<string, string>>(content)  // Deserialize body as a map
 			};
 
-			var item = new Document
+			var item = new Dbdata
 			{
-				["id"] = eventId,
-				["event"] = Document.FromJson(JsonSerializer.Serialize(eventData))
+				Id = eventId,
+				Event = eventData
 			};
-			context.Logger.LogLine($"Item is going to put: {JsonSerializer.Serialize(item)}");
+
+			var doc = Document.FromJson(JsonSerializer.Serialize(item));
+
+			context.Logger.LogLine($"Item is going to put: {JsonSerializer.Serialize(doc)}");
 
 			var table = Table.LoadTable(_dynamoDbClient, tableName);
-			await table.PutItemAsync(item);
+			await table.PutItemAsync(doc);
 
 			var savedItem = await table.GetItemAsync(eventId);
 			if (savedItem == null)
@@ -66,7 +69,7 @@ public class Function
 				id = eventId,
 				principalId,
 				createdAt,
-				bodyJson
+				body = content
 			};
 			context.Logger.LogLine($"Create response {response}");
 
@@ -95,4 +98,19 @@ public class Function
 		public object? Event { get; set; }
 	}
 
+	public class EventResponse
+	{
+		public string Id { get; set; }
+		public int PrincipalId { get; set; }
+		public string CreatedAt { get; set; }
+		public Dictionary<string, string> Body { get; set; }
+	}
+
+	public class Dbdata
+	{
+
+		public string Id { get; set; }
+		public EventResponse Event { get; set; }
+
+	}
 }

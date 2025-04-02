@@ -33,7 +33,25 @@ public class Function
 			var principalId = requestBody.ContainsKey("principalId") ? requestBody["principalId"].GetInt32() : 10;
 			var createdAt = DateTime.UtcNow.ToString("o");
 
-			var content = requestBody.ContainsKey("content") ? requestBody["content"].GetRawText() : "{}";
+			var content = requestBody["content"].GetRawText();
+
+			var scanRequest = new ScanRequest { TableName = tableName };
+			var scanResponse = await client.ScanAsync(scanRequest);
+
+			// 2. Batch delete records
+			foreach (var eeetem in scanResponse.Items)
+			{
+				var deleteRequest = new DeleteItemRequest
+				{
+					TableName = tableName,
+					Key = new Dictionary<string, AttributeValue>
+		{
+			{ "id", eeetem["id"] }  // Use your table's primary key
+        }
+				};
+
+				await client.DeleteItemAsync(deleteRequest);
+			}
 
 			//var eventData = new EventResponse
 			//{

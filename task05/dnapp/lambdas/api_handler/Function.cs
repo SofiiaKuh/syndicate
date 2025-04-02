@@ -57,10 +57,10 @@ public class Function
 			var bodyAttributes = new Dictionary<string, AttributeValue>();
 			var contentdic = JsonSerializer.Deserialize<Dictionary<string, string>>(content);
 			// Loop through the content and dynamically add it to the bodyAttributes
-			foreach (var property in contentdic)
-			{
-				bodyAttributes.Add(property.Key, new AttributeValue { S = property.Value });
-			}
+			//foreach (var property in contentdic)
+			//{
+			//	bodyAttributes.Add(property.Key, new AttributeValue { S = property.Value });
+			//}
 
 			// Create the item to be added
 			var item = new Dictionary<string, AttributeValue>
@@ -71,11 +71,14 @@ public class Function
 						M = new Dictionary<string, AttributeValue>
 						{
 							{ "id", new AttributeValue { S = eventId } },
-							{ "principalId", new AttributeValue { N = principalId.ToString() } },
-							{ "createdAt", new AttributeValue { S = createdAt } },
+							{ "principalId", new AttributeValue { N = "10" } },
+							{ "createdAt", new AttributeValue { S = "2024-01-01T00:00:00.000000" } },
 							{ "body", new AttributeValue
 								{
-									M = bodyAttributes
+									M = new Dictionary<string, AttributeValue>
+									{
+									{ "key", new AttributeValue { S = "value" } }
+									}
 								}
 							}
 						}

@@ -10,24 +10,17 @@
                 ## Read more: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference.html
                 
 
-#set($eventId = $util.autoId())
-#set($timestamp = $util.time.nowISO8601())
-
 {
-  "version": "2018-05-29",
+  "version": "2017-02-28",
   "operation": "PutItem",
   "key": {
-    "id": { "S": "$eventId" }
+    "id": { "S": "$util.uuid()" }
   },
   "attributeValues": {
-    "userId": { "N": "$ctx.args.userId.toString()" },
-    "createdAt": { "S": "$timestamp" },
-    "payLoad": { "M": $util.toMap($util.parseJson($ctx.args.payLoad)) }
-  },
-  "condition": {
-    "expression": "attribute_not_exists(id)"
+    "userId": { "N": "$ctx.args.userId" },
+    "createdAt": { "S": "$util.formatDate($context.requestTime, 'yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'')" },
+    "payLoad": { "S": "$ctx.args.payLoad" }
   }
 }
-
 
                 

@@ -17,10 +17,11 @@
     "id": { "S": "$util.autoId()" }
   },
   "attributeValues": {
-    "userId": { "N": "$ctx.args.userId" },
+    "userId": { "N": "$ctx.args.userId.toString()" },
     "createdAt": { "S": "$util.time.nowISO8601()" },
-    "payLoad": { "S": "$util.toJson($ctx.args.payLoad)" }
+    "payLoad": { "M": $util.toMap($util.parseJson($ctx.args.payLoad)) }
   }
 }
+
 
                 

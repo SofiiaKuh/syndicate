@@ -2,7 +2,7 @@
   {
     "id": "$ctx.result.id.S",
     "userId": $ctx.result.userId.N,
-    "createdAt": "$ctx.result.createdAt.S",
+"createdAt": { "S": "$util.formatDate($context.requestTime, 'yyyy-MM-dd'T'HH:mm:ss.SSS'Z')" }
     "payLoad": #if($ctx.result.payLoad)
       $util.toJson($ctx.result.payLoad)
     #else

@@ -10,7 +10,7 @@
                 ## Read more: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference.html
                 
                 {
-                    {
+{
   "version": "2018-05-29",
   "operation": "PutItem",
   "key": {
@@ -19,9 +19,8 @@
   "attributeValues": {
     "userId": { "N": "$ctx.args.userId" },
     "createdAt": { "S": "$util.time.nowISO8601()" },
-    "payLoad": { "M": $util.parseJson($ctx.args.payLoad) }
+    "payLoad": { "S": "$util.toJson($ctx.args.payLoad)" }
   }
 }
-
-                }
+ }
                 

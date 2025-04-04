@@ -1,9 +1,15 @@
 ## Pass back the result from DynamoDB. **
 {
+"data" {
+
 "createEvent": {
 
-  "id": "$ctx.result.id",
-  "createdAt": "$util.time.nowISO8601()"
+  "id": "$ctx.result.id.S",
+  "userId": "$ctx.result.userId.N",
+  "createdAt": "$ctx.result.createdAt.S",
+  "payLoad": "$ctx.result.payLoad.S"
+
+}
 }
 }
                 

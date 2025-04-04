@@ -1,3 +1,15 @@
 ## Pass back the result from DynamoDB. **
-$util.toJson($ctx.result)
-                
+{
+"data" {
+
+"createEvent": {
+
+  "id": "$ctx.result.id.S",
+  "userId": "$ctx.result.userId.N",
+  "createdAt": "$ctx.result.createdAt.S",
+  "payLoad": "$ctx.result.payLoad.S"
+
+}
+}
+}
+         

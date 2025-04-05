@@ -17,7 +17,7 @@
     "id": { "S": "$util.uuid()" }
   },
   "attributeValues": {
-  "createdAt": { "S": "$util.time.nowISO8601()" },
+  "createdAt": "$util.time.nowISO8601()",
     "userId": { "N": "$ctx.args.userId" },
     "payLoad": { "S": "$ctx.args.payLoad" }
   }

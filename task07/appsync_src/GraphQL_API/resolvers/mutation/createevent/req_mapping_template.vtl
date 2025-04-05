@@ -22,4 +22,8 @@
     "payLoad":  {  "M": $util.dynamodb.toMapValues($util.parseJson($ctx.args.payLoad)) }
   }
 }
+
+$util.log("non Parsed payLoad: " + $ctx.args.payLoad)
+$util.log("Parsed payLoad: " + $util.parseJson($ctx.args.payLoad))
+
          

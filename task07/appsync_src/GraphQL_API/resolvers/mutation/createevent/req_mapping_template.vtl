@@ -18,7 +18,7 @@
   },
   "attributeValues": {
     "userId": { "N": "$ctx.args.userId" },
-    "createdAt": "S": "$context.requestTime",
+    "createdAt": { "S": "$context.requestTime" },
     "payLoad": { "S": "$ctx.args.payLoad" }
   }
 }

@@ -2,7 +2,7 @@
   {
     "id": "$ctx.result.id.S",
     "userId": $ctx.result.userId.N,
-    "createdAt": { "S": "$ctx.result.createdAt.S" },
+    "createdAt": { "S": "$util.time.nowISO8601()" },
     "payLoad": #if($ctx.result.payLoad)
       $util.toJson($ctx.result.payLoad)
     #else

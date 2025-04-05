@@ -19,12 +19,7 @@
   "attributeValues": {
     "userId": { "N": "$ctx.args.userId" },
     "createdAt": { "S": "$util.time.nowISO8601()" },
-    "payLoad": { "M": {
-  "meta": {
-          "key1": { "N": "933" },
-          "key2": { "S": "test_value" }
-        }
-} }
+    "payLoad":  {  "M": $util.dynamodb.toMapValues($util.parseJson($ctx.args.payLoad)) }
   }
 }
          

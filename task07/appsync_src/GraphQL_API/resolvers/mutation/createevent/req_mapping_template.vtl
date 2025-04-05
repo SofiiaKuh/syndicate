@@ -21,9 +21,9 @@
     "createdAt": { "S": "$util.time.nowISO8601()" },
     "payLoad": { "M": {
   "meta": {
-   "key1": 933
-   "key2": "test_value"
-  }
+          "key1": { "N": "933" },
+          "key2": { "S": "test_value" }
+        }
 } }
   }
 }

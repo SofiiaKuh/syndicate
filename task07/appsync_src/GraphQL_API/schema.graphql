@@ -1,20 +1,17 @@
-scalar AWSJSON
-scalar AWSDateTime
-
-type PayLoadMeta {
-  key1: Int!
-  key2: String!
+type Item {
+  key1: Int
+  key2: String
 }
 
-type PayLoad {
-  meta: PayLoadMeta!
+type Meta {
+  meta: Item
 }
 
 type Event {
   id: ID!
   userId: Int!
-  createdAt: AWSDateTime!
-  payLoad: PayLoad!
+  createdAt: String!
+  payLoad: Meta!
 }
 
 type Query {
@@ -23,4 +20,9 @@ type Query {
 
 type Mutation {
   createEvent(userId: Int!, payLoad: AWSJSON!): Event!
+}
+
+schema { 
+  query: Query
+  mutation: Mutation
 }

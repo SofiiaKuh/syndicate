@@ -10,8 +10,6 @@
                 ## Read more: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-mapping-template-reference.html
                 
 
-#set($parsedPayLoad = $util.parseJson($ctx.args.payLoad))
-
 {
   "version": "2018-05-29",
   "operation": "PutItem",
@@ -21,12 +19,6 @@
   "attributeValues": {
     "userId": { "N": "$ctx.args.userId" },
     "createdAt": { "S": "$util.time.nowISO8601()" },
-    "payLoad": { "M": $util.dynamodb.toMapValues($parsedPayLoad.meta) }
+    "payLoad": { "s": "$ctx.args.payLoad" }
   }
 }
-
-
-$util.log("non Parsed payLoad: %s", $ctx.args.payLoad)
-$util.log("Parsed payLoad: %s", $util.parseJson($ctx.args.payLoad))
-
-         

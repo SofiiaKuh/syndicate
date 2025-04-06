@@ -1,10 +1,10 @@
 {
   "id": "$ctx.result.id.S",
-  "userId": "$util.parseDecimal($ctx.result.userId.N)",
+  "userId": $ctx.result.userId.N,
   "createdAt": "$ctx.result.createdAt.S",
   "payLoad": {
     "meta": {
-      "key1": "$util.isNull($ctx.result.payLoad.M.meta.M.key1.N) ? null : $util.parseDecimal($ctx.result.payLoad.M.meta.M.key1.N)",
+      "key1": $util.isNull($ctx.result.payLoad.M.meta.M.key1.N) ? null : $ctx.result.payLoad.M.meta.M.key1.N,
       "key2": "$util.isNull($ctx.result.payLoad.M.meta.M.key2.S) ? null : $ctx.result.payLoad.M.meta.M.key2.S"
     }
   }

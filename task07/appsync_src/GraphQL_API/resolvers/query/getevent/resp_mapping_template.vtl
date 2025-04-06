@@ -1,11 +1,11 @@
 {
     "id": "$ctx.result.id.S",
-    "userId": $ctx.result.userId.N,
+    "userId": $util.parseDecimal($ctx.result.userId.N),
   "createdAt": "$ctx.result.createdAt.S",
 "payLoad": {
     "meta": {
-      "key1": $ctx.result.payLoad.meta.key1.N,
-      "key2": "$ctx.result.payLoad.meta.key2.S"
+      "key1": $util.parseDecimal($ctx.result.payLoad.M.meta.M.key1.N),
+      "key2": "$ctx.result.payLoad.M.meta.M.key2.S"
     }
   }
 }

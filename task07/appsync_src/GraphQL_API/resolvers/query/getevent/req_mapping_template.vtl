@@ -14,20 +14,6 @@
   "version": "2018-05-29",
   "operation": "GetItem",
   "key": {
-    "id": { "S": "$util.autoId()" }
-  },
-  "attributeValues": {
-    "userId": { "N": "$ctx.args.userId" },
-    "createdAt": { "S": "$util.time.nowISO8601()" },
-"payLoad": {
-      "M": {
-        "meta": {
-          "M": {
-            "key1": { "N": "$ctx.args.payLoad.meta.key1" },
-            "key2": { "S": "$ctx.args.payLoad.meta.key2" }
-          }
-        }
-      }
-    }  
-    }
+    "id": { "S": "$ctx.args.id" }
+  }
 }

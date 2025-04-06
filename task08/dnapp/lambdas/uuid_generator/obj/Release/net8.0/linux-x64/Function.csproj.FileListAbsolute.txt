@@ -1,6 +1,0 @@
-C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task08\dnapp\lambdas\uuid_generator\obj\Release\net8.0\linux-x64\Function.csproj.AssemblyReference.cache
-C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task08\dnapp\lambdas\uuid_generator\obj\Release\net8.0\linux-x64\Function.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task08\dnapp\lambdas\uuid_generator\obj\Release\net8.0\linux-x64\Function.AssemblyInfoInputs.cache
-C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task08\dnapp\lambdas\uuid_generator\obj\Release\net8.0\linux-x64\Function.AssemblyInfo.cs
-C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task08\dnapp\lambdas\uuid_generator\obj\Release\net8.0\linux-x64\Function.csproj.CoreCompileInputs.cache
-C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task08\dnapp\lambdas\uuid_generator\obj\Release\net8.0\linux-x64\Function.sourcelink.json

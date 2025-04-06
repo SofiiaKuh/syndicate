@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/pXhX+OLSIA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sofia\\OneDrive\\Desktop\\AWS\\Syndicate\\syndicate_venv\\tasks\\syndicate\\task08\\dnapp\\lambdas\\uuid_generator\\Function.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sofia\\.nuget\\packages\\amazon.lambda.apigatewayevents\\2.4.0\\amazon.lambda.apigatewayevents.2.4.0.nupkg.sha512",
+    "C:\\Users\\sofia\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\sofia\\.nuget\\packages\\amazon.lambda.serialization.systemtextjson\\2.2.0\\amazon.lambda.serialization.systemtextjson.2.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,6 +1,11 @@
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Amazon.Lambda.Core;
-using Amazon.Lambda.APIGatewayEvents;
+using Amazon.Lambda.S3Events;
+using Amazon.S3;
+using Amazon.S3.Model;
+using Newtonsoft.Json;
 
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
 
@@ -8,7 +13,7 @@ namespace SimpleLambdaFunction;
 
 public class Function
 {
-	public class Function
+	public class FunctionHandler
 	{
 		private readonly AmazonS3Client _s3Client;
 		private readonly string _bucketName;

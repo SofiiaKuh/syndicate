@@ -1,14 +1,6 @@
-#if($ctx.result)
-  {
+{
     "id": "$ctx.result.id.S",
     "userId": "$ctx.result.userId.N",
   "createdAt": "$ctx.result.createdAt.S",
-    "payLoad": #if($ctx.result.payLoad)
-      "$util.toJson($ctx.result.payLoad)"
-    #else
-      {}
-    #end
-  }
-#else
-  $util.error("Event not found", "NotFound")
-#end
+    "payLoad": "$util.toJson($ctx.result.payLoad)"
+    }

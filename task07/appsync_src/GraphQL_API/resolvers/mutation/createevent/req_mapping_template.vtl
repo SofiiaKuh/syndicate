@@ -19,6 +19,15 @@
   "attributeValues": {
     "userId": { "N": "$ctx.args.userId" },
     "createdAt": { "S": "$util.time.nowISO8601()" },
-    "payLoad": { "M": $ctx.args.payLoad }
-  }
+"payLoad": {
+      "M": {
+        "meta": {
+          "M": {
+            "key1": { "N": "$ctx.args.payLoad.meta.key1" },
+            "key2": { "S": "$ctx.args.payLoad.meta.key2" }
+          }
+        }
+      }
+    }  
+    }
 }

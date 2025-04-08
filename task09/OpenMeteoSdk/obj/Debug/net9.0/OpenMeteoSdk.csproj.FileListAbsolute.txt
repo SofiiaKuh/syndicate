@@ -1,0 +1,12 @@
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\bin\Debug\net9.0\OpenMeteoSdk.deps.json
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\bin\Debug\net9.0\OpenMeteoSdk.dll
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\bin\Debug\net9.0\OpenMeteoSdk.pdb
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.AssemblyInfoInputs.cache
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.AssemblyInfo.cs
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.csproj.CoreCompileInputs.cache
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.sourcelink.json
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.dll
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\refint\OpenMeteoSdk.dll
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\OpenMeteoSdk.pdb
+C:\Users\sofia\OneDrive\Desktop\AWS\Syndicate\syndicate_venv\tasks\syndicate\task09\OpenMeteoSdk\obj\Debug\net9.0\ref\OpenMeteoSdk.dll
